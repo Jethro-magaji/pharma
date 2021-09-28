@@ -4,21 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Blank</title>
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    rel="stylesheet"
-    />
-    <!-- MDB -->
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
-    rel="stylesheet"
-    />    <!-- Font Awesome -->
-
     <style>
       #loader {
         transition: all 0.3s ease-in-out;
@@ -69,11 +54,21 @@
         }
       }
     </style>
-    <!-- MDB -->
-  <script
-  type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
-  ></script>
+    <!-- Font Awesome -->
+   <link
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+   rel="stylesheet"
+   />
+   <!-- Google Fonts -->
+   <link
+   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+   rel="stylesheet"
+   />
+   <!-- MDB -->
+   <link
+   href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+   rel="stylesheet"
+   />
   </head>
   <body class="app">
     <!-- @TOC -->
@@ -123,7 +118,7 @@
                       </div>
                     </div>
                     <div class="peer peer-greed">
-                      <h5 class="lh-1 mB-0 logo-text">Pharmacy</h5>
+                      <h5 class="lh-1 mB-0 logo-text">Adminator</h5>
                     </div>
                   </div>
                 </a>
@@ -147,25 +142,6 @@
                 </span>
                 <span class="title">Dashboard</span>
               </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class='sidebar-link' href="javascript:void(0);">
-                <span class="icon-holder">
-                  <i class="c-teal-500 ti-view-list-alt"></i>
-                </span>
-                <span class="title">Forms</span>
-                <span class="arrow">
-                  <i class="ti-angle-right"></i>
-                </span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class='sidebar-link' href="forms.html">Diuretic Thiazide</a>
-                </li>
-                <li>
-                  <a class='sidebar-link' href="forms.html">Furosemide</a>
-                </li>
-              </ul>
             </li>
             <li class="nav-item">
               <a class='sidebar-link' href="email.html">
@@ -199,12 +175,28 @@
                 <span class="title">Chat</span>
               </a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item">
+              <a class='sidebar-link' href="charts.html">
+                <span class="icon-holder">
+                  <i class="c-indigo-500 ti-bar-chart"></i>
+                </span>
+                <span class="title">Charts</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class='sidebar-link' href="forms.html">
+                <span class="icon-holder">
+                  <i class="c-light-blue-500 ti-pencil"></i>
+                </span>
+                <span class="title">Forms</span>
+              </a>
+            </li>
+            <li class="nav-item">
               <a class="sidebar-link" href="ui.html">
                 <span class="icon-holder">
                     <i class="c-pink-500 ti-palette"></i>
                   </span>
-                <span class="title">Elements</span>
+                <span class="title">UI Elements</span>
               </a>
             </li>
             <li class="nav-item dropdown">
@@ -229,6 +221,25 @@
             <li class="nav-item dropdown">
               <a class="dropdown-toggle" href="javascript:void(0);">
                 <span class="icon-holder">
+                    <i class="c-purple-500 ti-map"></i>
+                  </span>
+                <span class="title">Maps</span>
+                <span class="arrow">
+                    <i class="ti-angle-right"></i>
+                  </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="google-maps.html">Google Map</a>
+                </li>
+                <li>
+                  <a href="vector-maps.html">Vector Map</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="dropdown-toggle" href="javascript:void(0);">
+                <span class="icon-holder">
                     <i class="c-red-500 ti-files"></i>
                   </span>
                 <span class="title">Pages</span>
@@ -236,10 +247,10 @@
                     <i class="ti-angle-right"></i>
                   </span>
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu">                                
                 <li>
                   <a class='sidebar-link' href="blank.html">Blank</a>
-                </li>                 
+                </li>
                 <li>
                   <a class='sidebar-link' href="404.html">404</a>
                 </li>
@@ -257,9 +268,9 @@
             <li class="nav-item dropdown">
               <a class="dropdown-toggle" href="javascript:void(0);">
                 <span class="icon-holder">
-                  <i class="c-light-blue-500 ti-pencil"></i>
+                  <i class="c-teal-500 ti-view-list-alt"></i>
                 </span>
-                <span class="title">Mutiple levels</span>
+                <span class="title">Multiple Levels</span>
                 <span class="arrow">
                   <i class="ti-angle-right"></i>
                 </span>
@@ -287,6 +298,8 @@
                   </ul>
                 </li>
               </ul>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -518,315 +531,6 @@
         <main class='main-content bgc-grey-100'>
           <div id='mainContent'>
             <div class="full-container">
-              <table class="table table-bordered border-primary">
-                <thead>
-                  <tr>
-                    <th colspan="4" style="text-align: center;">DATA FORMS</th>
-                    
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <div class="form-check" style="text-align: center;">
-                        <label class="form-label form-check-label">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            New Medication
-                          </div> 
-                        </label>
-                      </div>
-                    </td>
-
-                    <td> 
-                      <div class="form-check" style="text-align: center;">
-                        <label class="form-label form-check-label">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            Refill
-                          </div>
-                        </label>
-                      </div>
-                    </td>                 
-                
-                  </tr>
-                  
-                </tbody>
-              </table>
-              <table class="table table-bordered border-primary" style="text-align: center;">
-                <thead>
-                  <tr>
-                    
-                    <th colspan="4" style="text-align: center;">LAB TEST & BLOOD PRESSURE</th>
-                    
-                  </tr>
-                </thead>
-                <tbody>
-                 <tr>
-                    <td>
-                      <div class="form-check" style="text-align: center;">
-                        <label class="form-label form-check-label">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            See netcare records for lab test
-                          </div> 
-                        </label>
-                      </div>
-                    </td>
-
-                    <td> 
-                      <div class="form-check" style="text-align: center;">
-                        <label class="form-label form-check-label">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            Blood pressure
-                          </div>
-                        </label>
-                      </div>
-                    </td>
-                    
-                    <td> 
-                      <div class="form-check" style="text-align: center;">
-                        <label class="form-label form-check-label">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            Heart rate
-                          </div>
-                        </label>
-                      </div>
-                    </td>
-
-                    <td> 
-                      <div class="form-check" style="text-align: center;">
-                        <label class="form-label form-check-label">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            Crcl ml/min
-                          </div>
-                        </label>
-                      </div>
-                    </td>
-                
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="form-check" style="text-align: center;">
-                        <label class="form-label form-check-label">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            Na+ (Sodium)
-                          </div> 
-                        </label>
-                      </div>
-                    </td>
-
-                    <td> 
-                      <div class="form-check" style="text-align: center;">
-                        <label class="form-label form-check-label">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            
-                            K+ (Potassium)
-                          </div>
-                        </label>
-                      </div>
-                    </td>
-                    
-                    <td colspan="2"> 
-                      <div class="form-check" style="text-align: center;">
-                        <label class="form-label form-check-label">
-                          <div class="form-check">
-                            <input type="text" class="form-control" id="validationCustom01" placeholder="Others">
-                            
-                          </div>
-                        </label>
-                      </div>
-                    </td>
-                
-                  </tr>
-                 
-                </tbody>
-              </table>
-
-              <table class="table table-bordered border-primary" style="text-align: center;">
-                <thead>
-                  <tr>
-                    
-                    <th colspan="4" style="text-align: center;">INDICATIONS</th>
-                    
-                  </tr>
-                </thead>
-                <tbody>
-                 <tr>
-                    <td>
-                      <div class="form-check" style="text-align: center;">
-                        <label class="form-label form-check-label">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            Diuretic is indicated for the followings
-                          </div> 
-                        </label>
-                      </div>
-                    </td>
-
-                    <td> 
-                      <div class="form-check" style="text-align: center;">
-                        <label class="form-label form-check-label">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            Diuretic is not indicated for the current conditions
-                          </div>
-                        </label>
-                      </div>
-                    </td>
-                    
-                    <td> 
-                      <div class="form-check" style="text-align: center;">
-                        <label class="form-label form-check-label">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            Prescribe as off label use
-                          </div>
-                        </label>
-                      </div>
-                    </td>
-
-                    <td colspan="2"> 
-                      <div class="form-check" style="text-align: center;">
-                        <label class="form-label form-check-label">
-                          <div class="form-check">
-                            <input type="text" class="form-control" id="validationCustom01" placeholder="Others">
-                            
-                          </div>
-                        </label>
-                      </div>
-                    </td>
-                
-                  </tr>
-                 
-                </tbody>
-              </table>
-              <table class="table table-bordered border-primary" style="text-align: center;">
-                <thead>
-                  <tr>
-                    
-                    <th colspan="4" style="text-align: center;">ADHERENCE</th>
-                    
-                  </tr>
-                </thead>
-                <tbody>
-                 <tr>
-                    <td>
-                      <div class="form-check" style="text-align: center;">
-                        <label class="form-label form-check-label">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            Starting as new medication and expected to take regularly for indicated medical conditions.
-                          </div> 
-                        </label>
-                      </div>
-                    </td>
-
-                    <td> 
-                      <div class="form-check" style="text-align: center;">
-                        <label class="form-label form-check-label">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            Take same as prescribed.
-                          </div>
-                        </label>
-                      </div>
-                    </td>
-                    
-                    <td> 
-                      <div class="form-check" style="text-align: center;">
-                        <label class="form-label form-check-label">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="flexCheckDefault"
-                            />
-                            
-                            Not Taking above regularly due to financial cost of medication
-                          </div>
-                        </label>
-                      </div>
-                    </td>
-
-                    
-                
-                  </tr>
-                 
-                </tbody>
-              </table>
-              
             </div>
           </div>
         </main>

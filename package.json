@@ -72,6 +72,7 @@
     "load-google-maps-api": "^2.0.2",
     "lodash": "^4.17.21",
     "masonry-layout": "^4.2.2",
+    "mdb-ui-kit": "^3.9.0",
     "moment": "^2.29.1",
     "perfect-scrollbar": "^1.5.1",
     "skycons": "^1.0.0",

@@ -27,6 +27,9 @@ body {
     padding: 5px 30px;
 }
 
+.form {
+    position: relative;
+}
 
 .nav,
 .user,
@@ -35,6 +38,7 @@ body {
 .user--sign-out {
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
 }
 
 .user {
@@ -49,6 +53,10 @@ body {
     flex-shrink: 1;
 }
 
+.nav--search-bar {
+    position: relative;
+}
+
 .search {
     width: 40vw;
     height: 60%;
@@ -58,11 +66,19 @@ body {
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 2px 2px #ccc;
+    font-weight: bold;
+}
+
+.input-icon {
+    position: absolute;
+    right: 12px;
+    top: 8px;
 }
 
 .search::placeholder {
     font-weight: bold;
     font-size: 1.1rem;
+    transform: translate3d(0, 2px, 0);
 }
 
 .welcome--user__vertical,
@@ -77,7 +93,7 @@ body {
 
 .icon {
     margin-right: 5px;
-    /* padding: 2px; */
+    transform: translateY(-2px);
 }
 
 .heading {
@@ -116,6 +132,7 @@ body {
     padding: 1px 20px 0px 1px;
     height: 50px;
     margin-bottom: 20px;
+    border-bottom: 1px solid rgb(155, 137, 137);
 }
 
 .data--heading__border-radius {
@@ -139,13 +156,21 @@ h2 {
     margin-bottom: 20px;
 }
 
-input[type=checkbox] {
-    color: red;
-    border: 2px solid red;
+p.efficacy {
+    padding-left: 3%;
+    font-weight: bold;
 }
 
-p .efficacy {
-    
+button.print {
+    position: relative;
+    left: 42.5%;
+    background:white;
+    border: none;
+    margin: 10px 0;
+}
+
+.adherence-radio {
+    margin-left: 30px;
 }
 
 

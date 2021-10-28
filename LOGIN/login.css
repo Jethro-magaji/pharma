@@ -61,7 +61,8 @@ label {
     font-size: 1.5rem;
     font-weight: bolder;
     width: 100px;
-    border: 2px solid red;
+    display: inline-block;
+    width: 150px;
 }
 
 input[type="text"], 

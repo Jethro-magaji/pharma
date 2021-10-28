@@ -12,16 +12,17 @@
         <header class="header">
             <nav class="nav">
                 <div class="nav--logo">
-                    <img src="" alt="" srcset="">
+                    <img src="../IMAGES/logi33 (1).png" alt="logo" width="300" height="45">
                 </div>
 
                 <div class="nav--search-bar">
-                    <input type="search" name="" id="" class="search" placeholder="Search" results>
+                    <input type="search" name="search" id="search" class="search" placeholder="Search" results>
+                    <img src="../IMAGES/search.png" alt="search icon" class="input-icon" width="15" height="15">
                 </div>
 
                 <div class="user">
                     <div class="welcome-user">
-                        <img src="../IMAGES/user.png" alt="user icon" srcset="" class="user--icon icon" width="15" height="15">
+                        <img src="../IMAGES/user.png" alt="user icon" srcset="" class="user--icon icon" width="25" height="25">
                         
                         <div class="welcome--user__text-vertical">
                             <p class="nav--text">Welcome User</p> <span class="welcome--user__vertical">|</span>
@@ -29,7 +30,7 @@
                     </div>
 
                     <div class="user--sign-out">
-                        <img src="../IMAGES/signout.png" alt="signout icon" width="15" height="15" class=" icon signout--icon">
+                        <img src="../IMAGES/signout.png" alt="signout icon" width="25" height="25" class=" icon signout--icon">
                         <p>Signout</p>
                     </div>
                 </div>
@@ -37,18 +38,18 @@
         </header>
         <main class="main">
             <div class="heading">
-                <p class="drug-name">Diuretics thaizide</p>
+                <p class="drug-name">Diuretics thiazide</p>
 
                 <div class="heading--icon">
                     <img src="../IMAGES/printer-black.PNG" alt="" class="heading-icon__print" height="30" width="30">
-                    <img src="" alt="" class="heading-icon__menu">
+                    <img src="../IMAGES/menu.png" alt="menu button" class="heading-icon__menu" height="30" width="30">
                 </div>
             </div>
-            <form action="" class="from">
+            <form action="" class="form">
                 <fieldset class="fieldset">
                     <div class="fieldset--data">
-                        <div class="fieldset--data__one">
-                            <h2 class="data-heading">Lab Test & Blood Pressure</h2>
+                        <div class="fieldset--data__one fieldset--data__details">
+                            <div class="data-heading data--heading__border-radius"><h2>Lab Test & Blood Pressure</h2></div>
 
                             <div class="individual-field">
                                 <input type="checkbox" name="starting-new-med" id="starting-new-med">
@@ -62,8 +63,8 @@
                             </div>
                         </div>
 
-                        <div class="fieldset--data__two">
-                            <h2 class="data-heading">Lab Test & Blood Pressure</h2>
+                        <div class="fieldset--data__two fieldset--data__details">
+                            <div class="data-heading"><h2>Lab Test & Blood Pressure</h2></div>
                             <div class="individual-field">
                                 <input type="checkbox" name="lab-test-blood-pressure" id="lab-test-blood-pressure">
                                 <label for="lab-test-blood-pressure">See Netcare Records for Lab Test</label>
@@ -101,8 +102,8 @@
                             </div>
 
                         </div>
-                        <div class="fieldset--data__three">
-                            <h2 class="data-heading">Indication</h2>
+                        <div class="fieldset--data__three fieldset--data__details">
+                            <div class="data-heading"><h2>Indication</h2></div>
                             <div class="individual-field">
                                 <input type="checkbox" name="diuretics-is-indicated" id="diuretics-is-indicated">
                                 <label for="diuretics-is-indicated">**diuretics** is indicated for
@@ -130,7 +131,7 @@
                                 <label for="other-three">Other</label>
                             </div>
 
-                            <p>Efficacy (Whatever He Select Above Indication Come As Default Efficacy</p>
+                            <p class="efficacy">Efficacy (Whatever He Select Above Indication Come As Default Efficacy</p>
 
                             <div class="individual-field">
                                 <input type="checkbox" name="fully-effective" id="fully-effective">
@@ -158,8 +159,8 @@
                             </div>
                         </div>
 
-                        <div class="fieldset--data__four">
-                            <h2 class="data-heading">Safety</h2>
+                        <div class="fieldset--data__four fieldset--data__details">
+                            <div class="data-heading"><h2>Safety</h2></div>
 
                             <div class="individual-field">
                                 <input type="checkbox" name="increase-urination" id="increase-urination">
@@ -251,8 +252,8 @@
                             </div>
                         </div>
 
-                        <div class="fieldset--data__five">
-                            <h2 class="data-heading">Adherence</h2>
+                        <div class="fieldset--data__five fieldset--data__details">
+                            <div class="data-heading"><h2>Adherence</h2></div>
 
                             <div class="individual-field">
                                 <input type="checkbox" name="starting-as-new-med" id="starting-as-new-med">
@@ -273,28 +274,30 @@
                             <div class="individual-field">
                                 <input type="checkbox" name="not-taking" id="not-taking">
                                 <label for="not-taking">Not taking **above** regularly due to</label>
-                                <div>
-                                    <input type="radio" name="pill-burden" id="pill-burden">
-                                    <label for="pill-burden">Pill burden/too many doses</label>
-                                </div>
-                                <div>
-                                    <input type="radio" name="Uncomfortable" id="Uncomfortable">
-                                    <label for="Uncomfortable">Uncomfortable/inconvenient</label>
-                                </div>
-                                <div>
-                                    <input type="radio" name="take-same" id="take-same">
-                                    <label for="take-same">Take **same** more than prescribed.</label>
-                                </div>
-                                <div>
-                                    <input type="radio" name="other-five" id="other-five">
-                                    <label for="other-five">OTHER**BOX**</label>
+                                <div class="adherence-radio">
+                                    <div>
+                                        <input type="radio" name="pill-burden" id="pill-burden">
+                                        <label for="pill-burden">Pill burden/too many doses</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="Uncomfortable" id="Uncomfortable">
+                                        <label for="Uncomfortable">Uncomfortable/inconvenient</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="take-same" id="take-same">
+                                        <label for="take-same">Take **same** more than prescribed.</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="other-five" id="other-five">
+                                        <label for="other-five">OTHER**BOX**</label>
+                                    </div>
                                 </div>
                             </div>
                                 
                         </div>
 
-                        <div class="fieldset--data__six">
-                            <h2 class="data-heading">Other Information</h2>
+                        <div class="fieldset--data__six fieldset--data__details">
+                            <div class="data-heading"><h2>Other Information</h2></div>
 
                             <div class="individual-field">
                                 <input type="checkbox" name="starting-new-med" id="starting-new-med">
@@ -308,8 +311,8 @@
                             </div>
                         </div>
 
-                        <div class="fieldset--data__seven">
-                            <h2 class="data-heading">Assesment</h2>
+                        <div class="fieldset--data__seven fieldset--data__details">
+                            <div class="data-heading"><h2>Assesment</h2></div>
 
                             <div class="individual-field">
                                 <input type="checkbox" name="therapy" id="therapy">
@@ -358,8 +361,8 @@
                             </div>
                         </div>
 
-                        <div class="fieldset--data__eight">
-                            <h2 class="data-heading">Plan</h2>
+                        <div class="fieldset--data__eight fieldset--data__details">
+                            <div class="data-heading"><h2>Plan</h2></div>
 
                             <div class="individual-field">
                                 <input type="checkbox" name="no-intervention" id="no-intervention">
@@ -448,8 +451,8 @@
                             </div>
                         </div>
 
-                        <div class="fieldset--data__nine">
-                            <h2 class="data-heading">Monitoring and Follow Up</h2>
+                        <div class="fieldset--data__nine fieldset--data__details">
+                            <div class="data-heading"><h2>Monitoring and Follow Up</h2></div>
 
                             <div class="individual-field">
                                 <input type="checkbox" name="monitor-side-effects" id="monitor-side-effects">
@@ -477,8 +480,8 @@
                                 <label for="monitor-hyper-hypo">Other**box**</label>
                             </div>
                         </div>
-                        <div class="fieldset--data__one">
-                            <h2 class="data-heading">Patient Follow up date.</h2>
+                        <div class="fieldset--data__ten fieldset--data__details">
+                            <div class="data-heading"><h2>Patient Follow up date</h2></div>
 
                             <div class="individual-field">
                                 <input type="checkbox" name="follow-up" id="follow-up">
@@ -531,8 +534,8 @@
                                 <label for="other-nine">Other **box**</label>
                             </div>    
                         </div>
-                        <div class="fieldset--data__ten">
-                            <h2 class="data-heading">Professional follow up </h2>
+                        <div class="fieldset--data__eleven fieldset--data__details">
+                            <div class="data-heading"><h2>Professional follow up</h2></div>
 
                             <div class="individual-field">
                                 <input type="checkbox" name="no-prof-follow" id="no-follow-up">
@@ -557,9 +560,9 @@
                         </div>
                     </div>
                 </fieldset>
-                <!-- <button class="print">
-                    <span class="print--icon"><img src="../IMAGES/print-button.png" alt="print button"></span>
-                </button> -->
+                <button class="print">
+                    <span class="print--icon"><img src="../IMAGES/print-button.png" alt="print button" width="200" height="50"></span>
+                </button>
             </form>
         </main>
     </div>

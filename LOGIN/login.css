@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-form {
+    width: 50%;
+}
+
+.hero-image {
+    height: 100vh;
+    width: 45vw;
+}
+
+.logo-image {
+    position: absolute;
+    top: 50%;
+    right: 62.5%;
+    width: 30%;
+    height: 10%;
+}
+
+.login-form--header {
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+
+.form--header__login {
+    color: #ececee;
+}
+
+.form--login__vertical-bar,
+.form--header___register-link--color a {
+    color: #433e54;
+}
+
+.form--header___register-link a {
+    text-decoration: none;
+}
+
+.field-wrapper {
+    border-bottom: 2px solid #ececee;
+    width: 90%;
+    margin: 40px 0;
+}
+
+label {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    width: 100px;
+    border: 2px solid red;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"]{
+    border: none;
+    outline: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+input::placeholder {
+    font-weight: 900;
+    color: black;
+    margin-left: 5rem;
+    font-size: 1.1rem;
+}
+
+
+button {
+    padding: 0.5rem 3rem;
+    /* background-color:  #433e54; */
+    background-image: linear-gradient(#5c5575, #433e54);
+    /* color: #5c5575; */
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+}

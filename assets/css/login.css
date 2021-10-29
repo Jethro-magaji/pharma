@@ -9,6 +9,7 @@
 body {
     margin: 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
 }
 
 .main {
@@ -35,7 +36,6 @@ body {
 }
 
 .login-form--header {
-    font-size: 2.1rem;
     font-weight: bold;
 }
 
@@ -54,7 +54,6 @@ body {
 }
 
 
-
 .field-wrapper {
     border-bottom: 2px solid #ececee;
     width: 90%;
@@ -71,7 +70,7 @@ body {
 
 .field-wrapper input[type="text"], 
 .field-wrapper input[type="email"], 
-.field-wrapper input[type="password"]{
+.field-wrapper input[type="password"] {
     border: none;
     outline: none;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -80,12 +79,12 @@ body {
     margin-left: 1rem;
 }
 
-.field-wrapper input::placeholder {
-    font-weight: 900;
+/* .field-wrapper input::placeholder {
+    font-weight: 900; 
     color: black;
     margin-left: 5rem;
     font-size: 1.1rem;
-}
+} */
 
 
 .submit-button {
@@ -108,12 +107,37 @@ span.register-button {
 
 /* sign up form */
 
+.field-wrapper-register {
+    border-bottom: 2px solid #ececee;
+    width: 100%;
+    /* margin: 40px 0; */
+}
+
+.field-wrapper-register input,
+.field-wrapper-register textarea,
+select {
+    border: none;
+    outline: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    box-shadow: none;
+}
+
+select {
+    margin-left: 15%;
+}
+
+
 .default_form .default_field {
     margin: 0.5rem 0;
+    margin-bottom: 20px;
 }
 
 .default_form label {
-    display: inline-block;
+    display: inline;
+    /* display: inline-block; */
     font-size: 1.3rem;
     font-weight: 700;
     padding: 0.25rem 0;
@@ -125,24 +149,25 @@ span.register-button {
 }
 
 .default_form {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 0;
-    max-width: 20rem;
+    padding: 0; */
+    max-width: 90%;
 }
 
-.default_form input[type="submit"], .default_form button {
+.default_form input[type="submit"] {
     font-size: 1.3rem;
     padding: 0.25rem 1rem;
 }
 
 .default_form input[type="text"], 
-.default_form input[type="email"], .default_form input[type="password"], 
+.default_form input[type="email"],
+.default_form input[type="password"], 
 .default_form input[type="tel"], 
 .default_form select {
-    font-size: 1.3rem;
-    width: 100%;
+    /* font-size: 1.1rem; */
+    width: 50%;
 }
 
 .contentcontainer {
@@ -150,7 +175,14 @@ span.register-button {
 }
 
 .contentcontainer {
-    padding: 0 10px;
+    /* padding: 0 10px; */
     margin: 0 auto;
 }
+
+.button {
+    display: block;
+    margin: 30px 0;
+    padding: 7px 50px;
+}
+
 

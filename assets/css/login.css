@@ -18,6 +18,7 @@ body {
 
 .login-form {
     width: 50%;
+    margin-top: 30px;
 }
 
 .hero-image {
@@ -51,13 +52,15 @@ body {
     text-decoration: none;
 }
 
+
+
 .field-wrapper {
     border-bottom: 2px solid #ececee;
     width: 90%;
     margin: 40px 0;
 }
 
-label {
+.field-wrapper label {
     font-size: 1.5rem;
     font-weight: bolder;
     width: 100px;
@@ -65,9 +68,9 @@ label {
     width: 150px;
 }
 
-input[type="text"], 
-input[type="email"], 
-input[type="password"]{
+.field-wrapper input[type="text"], 
+.field-wrapper input[type="email"], 
+.field-wrapper input[type="password"]{
     border: none;
     outline: none;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -76,7 +79,7 @@ input[type="password"]{
     margin-left: 1rem;
 }
 
-input::placeholder {
+.field-wrapper input::placeholder {
     font-weight: 900;
     color: black;
     margin-left: 5rem;
@@ -84,13 +87,61 @@ input::placeholder {
 }
 
 
-button {
+.submit-button {
     padding: 0.5rem 3rem;
-    /* background-color:  #433e54; */
     background-image: linear-gradient(#5c5575, #433e54);
-    /* color: #5c5575; */
     border-radius: 8px;
     border: none;
     color: white;
     font-size: 1.5rem;
 }
+
+
+/* sign up form */
+
+.default_form .default_field {
+    margin: 0.5rem 0;
+}
+
+.default_form label {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0.25rem 0;
+}
+
+.default_form .required {
+    color: rgb(228, 0, 0);
+    font-weight: 700;
+}
+
+.default_form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    max-width: 20rem;
+}
+
+.default_form input[type="submit"], .default_form button {
+    font-size: 1.3rem;
+    padding: 0.25rem 1rem;
+}
+
+.default_form input[type="text"], 
+.default_form input[type="email"], .default_form input[type="password"], 
+.default_form input[type="tel"], 
+.default_form select {
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+.contentcontainer {
+    width: 600px;
+}
+
+.contentcontainer {
+    padding: 0 10px;
+    margin: 0 auto;
+}
+

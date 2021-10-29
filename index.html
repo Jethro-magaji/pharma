@@ -17,12 +17,12 @@
         </section>
         <section class="login-form">
             <div class="login-form--header">
-                <h1 class="nav " id="nav-tab" role="tablist">
+                <h1 class="nav" id="nav-tab" role="tablist">
                     <span class="form--header__login" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" aria-controls="login" type="button" role="tab" aria-selected="true">Login</span>
                     <span class="form--login__vertical-bar">|</span>
-                    <span class="form--header___register-link form--header___register-link--color">
-                        <span  class="register-link" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup" role="tab" aria-controls="signup" type="button" aria-selected="true">Register</span>
-                    </span>
+                    <!-- <span class="form--header___register-link form--header___register-link--color"> -->
+                    <span class="register-button" href="#signup1" id="signup1-tab" data-bs-toggle="tab" data-bs-target="#signup1" role="tab" aria-controls="signup1" type="button" aria-selected="false">Register</span>
+                    <!-- </span> -->
                 </h1>
             </div>
             <div class="login-signup tab-content" id="nav-tabContent">
@@ -48,7 +48,7 @@
                     </form>
                 </div>
                 
-                <div class="signup--form__fields tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                <div class="signup--form__fields tab-pane active fade" id="signup1" role="tabpanel" aria-labelledby="signup1-tab">
                     <form class="signup" id="signup_form" method="post" action="/accounts/signup/">
                         <input type="hidden" name="csrfmiddlewaretoken" value="Qj3f2OkmpSGWoFno7LYnnIDB01100BbEaUBk3NagqeVJhY0OlVyrGgWv6gIjmRUy">
                 

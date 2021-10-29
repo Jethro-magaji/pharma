@@ -41,6 +41,7 @@ body {
 
 .form--header__login {
     color: #ececee;
+    margin-right: 5px;
 }
 
 .form--login__vertical-bar,
@@ -95,6 +96,14 @@ body {
     color: white;
     font-size: 1.5rem;
 }
+
+span.register-button {
+    text-decoration: none;
+    color: #433e54;
+    padding-left: 5px;
+}
+
+
 
 
 /* sign up form */

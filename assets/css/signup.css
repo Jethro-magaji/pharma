@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    font-family: Geneva, Tahoma, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.background-image {
+    width: 50%;
+    object-fit: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    right: 62.5%;
+    width: 30%;
+    height: 10%;
+}
+
+
+.logo-image {
+    position: fixed;  
+} 
+
+.register {
+    width: 45%;
+}
+
+.form--header__login,
+.form--header__login-text,
+.form--login__vertical-bar {
+    color: #433e54;
+}
+
+.form--header___register-link a,
+.form--header__login-text {
+    text-decoration: none;
+    
+}
+
+.form--header___register-link a,
+.form--header__login-text,
+.form--login__vertical-bar{
+    font-size: 3rem;
+}
+
+.form--header___register-link--color a {
+    color: #ececee;
+}
+
+.default_form .default_field {
+    margin: 0.5rem 0;
+}
+
+.default_form label {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0.25rem 0;
+}
+
+.default_form .required {
+    color: rgb(228, 0, 0);
+    font-weight: 700;
+}
+
+.default_form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    max-width: 20rem;
+}
+
+.default_form input[type="submit"], .default_form button {
+    font-size: 1.3rem;
+    padding: 0.25rem 1rem;
+}
+
+.default_form input[type="text"], 
+.default_form input[type="email"], 
+.default_form input[type="password"], 
+.default_form input[type="tel"],
+.default_form select {
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+.contentcontainer {
+    width: 600px;
+}
+
+.contentcontainer {
+    padding: 0 10px;
+    margin: 0 auto;
+}

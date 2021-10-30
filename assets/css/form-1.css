@@ -195,6 +195,7 @@ h2 {
 .individual-field {
     line-height: 30px;
     font-weight: bold;
+    display:relative;
 }
 
 input[type=checkbox]:checked {
@@ -294,6 +295,29 @@ button.print {
 } */
 
 
+/* Javascript edit */
+.pencil-input {
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.bi-mic-fill {
+    position: absolute;
+    right:16%;
+    font-size: 1.2rem;
+}
+
+.hide-mic {
+    display: none;
+}
+
+.show-mic {
+    display: inline;
+}
 
 
 

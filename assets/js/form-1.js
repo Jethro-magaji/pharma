@@ -4,7 +4,8 @@ let cancelButton = document.querySelector('.button--cancel');
 let form = document.querySelector('.form');
 let fieldset = document.querySelector('.fieldset--data');
 let checkboxes = document.querySelectorAll('input[type=checkbox]')
-console.log(checkboxes, menuButton);
+let pencilIcons = document.querySelectorAll('.bi-pencil-fill');
+// console.log(pencilcons)
 
 
 function displayModal(hideClass, showClass, mainBgClass) {
@@ -21,9 +22,19 @@ function hideModal(showClass,hideClass,mainBgClass) {
     modal.classList.add(hideClass)
 }
 
-checkboxes.forEach(checkbox => {
-    checkbox.addEventListener('click', ()=> {
-        
+pencilIcons.forEach(pencilIcon => {
+    pencilIcon.addEventListener('click', ()=> {
+    let textInput = document.createElement('input')
+    textInput.setAttribute('class', 'pencil-input')
+    let parent = pencilIcon.parentNode 
+    let label = parent.children[1]
+    textInput.value = label.textContent
+    parent.replaceChild(textInput, label)   
+    console.log(parent.lastElementChild);
+    parent.lastElementChild.classList.remove('hide-mic')
+    parent.lastElementChild.classList.add('show-mic')
+
+    
     })
 })
 

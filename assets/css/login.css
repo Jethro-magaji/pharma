@@ -36,11 +36,16 @@ body {
 }
 
 .login-form--header {
-    font-weight: bold;
+    font-weight: 900;
+    margin-left: -1%;
+}
+
+h1 {
+    font-size: 3.5rem !important;
 }
 
 .form--header__login {
-    color: #ececee;
+    color: #929292;
     margin-right: 5px;
 }
 
@@ -107,6 +112,13 @@ span.register-button {
 
 /* sign up form */
 
+.signup--form__fields-no-display {
+    display: none !important;
+}
+
+.signup--form__fields-display {
+    display: block !important;
+}
 .field-wrapper-register {
     border-bottom: 2px solid #ececee;
     width: 100%;
@@ -125,8 +137,30 @@ select {
     box-shadow: none;
 }
 
+
+/* span {
+    display: inline-block;
+    width: 200px;
+} */
+
+#id_profession {
+    transform: translateX(56%);
+}
+
+#id_time_zone {
+    transform: translateX(57%);
+}
+
+#id_province {
+    transform: translateX(62%);
+}
+
+#id_country {
+    transform: translateX(68%);
+}
+
 select {
-    margin-left: 15%;
+    opacity: 0.7;
 }
 
 
@@ -168,6 +202,7 @@ select {
 .default_form select {
     /* font-size: 1.1rem; */
     width: 50%;
+    opacity: 0.7;
 }
 
 .contentcontainer {

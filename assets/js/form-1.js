@@ -1,10 +1,10 @@
-// let menuButton = document.querySelector('.heading-icon__menu');
+let menuButton = document.querySelector('.fa-bars');
 let modal = document.querySelector('.modal');
 let cancelButton = document.querySelector('.button--cancel');
 let form = document.querySelector('.form');
 let fieldset = document.querySelector('.fieldset--data');
 let checkboxes = document.querySelectorAll('input[type=checkbox]')
-console.log(checkboxes);
+console.log(checkboxes, menuButton);
 
 
 function displayModal(hideClass, showClass, mainBgClass) {
@@ -27,5 +27,5 @@ checkboxes.forEach(checkbox => {
     })
 })
 
-// menuButton.addEventListener('click', ()=> { displayModal('hide', 'show','main__add-bg')})
+menuButton.addEventListener('click', ()=> { displayModal('hide', 'show','main__add-bg')})
 cancelButton.addEventListener('click', ()=> { hideModal('show', 'hide', 'main__add-bg')})

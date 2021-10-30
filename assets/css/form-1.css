@@ -11,6 +11,7 @@ body {
     padding: 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     width: 100%;
+    background-color: #f7f7f7;
 }
 
 .wrapper {
@@ -53,6 +54,10 @@ body {
     flex-shrink: 1;
 }
 
+.nav--logo {
+    margin-left: 1.2%;
+}
+
 .nav--search-bar {
     position: relative;
 }
@@ -61,15 +66,15 @@ body {
     width: 40vw;
     height: 60%;
     padding: 8px;
-    background-color: #ececee;
+    background-color: #888495;
     outline: none;
     border: none;
     border-radius: 5px;
     box-shadow: 0 0 2px 2px #ccc;
-    font-weight: bold;
+    font-weight: 300;
 }
 
-.input-icon {
+.bi-search {
     position: absolute;
     right: 12px;
     top: 8px;
@@ -79,10 +84,12 @@ body {
     font-weight: bold;
     font-size: 1.1rem;
     transform: translate3d(0, 2px, 0);
+    color: #f7f7f7;
 }
 
 .welcome--user__vertical,
-.icon {
+.bi-person-circle,
+.bi-arrow-right-circle {
     align-self: center;
 }
 
@@ -91,9 +98,15 @@ body {
     padding-bottom: 3px;
 }
 
-.icon {
+.user--sign-out {
+    transform: translateX(-15px);
+}
+
+.bi-person-circle,
+.bi-arrow-right-circle {
     margin-right: 5px;
-    transform: translateY(-2px);
+    font-size: 1.2rem;
+    /* transform: translateY(-1px); */
 }
 
 .heading {
@@ -107,7 +120,28 @@ body {
     display: flex;
     justify-content: space-between;
     align-self: center;
+    margin-right: 10px;
     width: 10%;
+}
+
+.bi-printer,
+.bi-list {
+    font-size: 2rem;
+}
+
+.bi-list {
+    font-weight: 1200;
+}
+
+.fa-bars {
+    font-size: 2rem;
+}
+
+.bi-pencil-fill {
+    position: relative;
+    bottom: 10px;
+    left: 5px;
+    font-size: 0.75rem;
 }
 
 .drug-name {
@@ -128,7 +162,7 @@ body {
 }
 
 .data-heading {
-    background-color: #ececee;
+    background:linear-gradient(90deg, #ededef, 30%, #ededef, 40%, #f5f5f7, 65% ,#fbfbfd, 75%, #ffffff);
     padding: 1px 20px 0px 1px;
     height: 50px;
     margin-bottom: 20px;
@@ -147,9 +181,14 @@ h2 {
 h2 {
     padding-left: 30px;
 }
+
 .individual-field {
     line-height: 30px;
     font-weight: bold;
+}
+
+input[type=checkbox]:checked {
+ color: red;
 }
 
 .fieldset--data__details {
@@ -213,18 +252,19 @@ button.print {
     transform: translateX(-30px);
 }
 
-.button--cancel {
+.bi-x {
     position: absolute;
-    top: 0;
+    top: -2%;
     right: 0;
-    margin: 10px;
+    margin: 0px;
     font-weight: bold;
-    font-size:  2.5rem;
-    background-color: white;
-    color: #ececee;
+    color: #b6b6b6;
     border: none;
-
+    padding:0;
+    font-size: 4rem;
 }
+
+
 
 /* SHOW OR HIDE MODAL */
 .hide {

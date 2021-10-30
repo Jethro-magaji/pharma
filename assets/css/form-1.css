@@ -345,7 +345,7 @@ input:checked + label::before {
     text-align: center;
     z-index: 2;
     left: 3.9%;
-    top: 16%;
+    top: 22%;
 }
 
 

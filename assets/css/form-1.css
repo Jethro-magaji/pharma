@@ -195,7 +195,7 @@ h2 {
 .individual-field {
     line-height: 30px;
     font-weight: bold;
-    display:relative;
+    position: relative;
 }
 
 input[type=checkbox]:checked {
@@ -317,6 +317,35 @@ button.print {
 
 .show-mic {
     display: inline;
+}
+
+/* custom checkbox */
+.custom-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: white;
+    border: 3px solid #bfbcc5;
+    height: 25px;
+    width:25px;
+    transform: translateY(35%);
+    position: relative;
+    border-radius: 2px;
+}
+
+input:checked {
+    background-color: #44386a;
+}
+
+input:checked + label::before {
+    position: absolute;
+    content: '\2713';
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    left: 3.9%;
+    top: 16%;
 }
 
 

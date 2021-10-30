@@ -112,13 +112,7 @@ span.register-button {
 
 /* sign up form */
 
-.signup--form__fields-no-display {
-    display: none !important;
-}
-
-.signup--form__fields-display {
-    display: block !important;
-}
+ 
 .field-wrapper-register {
     border-bottom: 2px solid #ececee;
     width: 100%;

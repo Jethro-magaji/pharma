@@ -7,25 +7,24 @@
 }
 
 html {
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
     overflow-y: scroll; 
 }
 
 html::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
+    display: none; 
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    width: 100%;
-    background-color: #f7f7f7;
-}
+    width: 100%;;
+} 
 
 .wrapper {
-    background: url(../IMAGES/bg.png) no-repeat fixed center;
+    background: url(../IMAGES/bg.JPG) repeat fixed center;
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -36,6 +35,13 @@ body {
     background-image: linear-gradient(#5c5574, #433e54);
     z-index: 1;
     padding: 5px 30px;
+    position: fixed; 
+    width: 100%;
+}
+
+.main {
+    /* background-color: hsla(255, 30%, 32%, 0.7); */
+    background-color: hsla(240, 6%, 93%, 0.7);
 }
 
 .form {
@@ -116,7 +122,6 @@ body {
 .bi-arrow-right-circle {
     margin-right: 5px;
     font-size: 1.2rem;
-    /* transform: translateY(-1px); */
 }
 
 .heading {
@@ -124,6 +129,8 @@ body {
     justify-content: space-between;
     padding: 1% 10%;
     padding-bottom: 10px;
+    padding-top: 90px;
+    margin: 0 0 0 1%;
 }
 
 .heading--icon {
@@ -155,7 +162,7 @@ body {
 }
 
 .drug-name {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -290,9 +297,6 @@ button.print {
     background-color: hsla(254, 15%, 39%, 0.7);
 }
 
-/* .fieldset--data {
-    background: red;
-} */
 
 
 /* Javascript edit */
@@ -307,7 +311,7 @@ button.print {
 
 .bi-mic-fill {
     position: absolute;
-    right:16%;
+    right:7%;
     font-size: 1.2rem;
 }
 
@@ -338,15 +342,16 @@ input:checked {
     background-color: #44386a;
 }
 
-input:checked + label::before {
+input:checked:after {
     position: absolute;
     content: '\2713';
-    color: #fff;
+    color: white;
     text-align: center;
-    z-index: 2;
-    left: 3.9%;
-    top: 22%;
+    left: 20%;
+    top: -2%;
 }
+
+
 
 
 

@@ -23,13 +23,17 @@ body {
 }
 
 .hero-image {
-    height: 100vh;
+    height: 100%;
     width: 45vw;
+    object-fit: cover;
 }
 
-.logo-image {
+.logo-image { 
+    position: fixed;
+} 
+.logo-parent {
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 62.5%;
     width: 30%;
     height: 10%;
@@ -111,7 +115,9 @@ span.register-button {
 
 
 /* sign up form */
-
+.signup--form__fields {
+    margin-top: 40px;
+}
  
 .field-wrapper-register {
     border-bottom: 2px solid #ececee;

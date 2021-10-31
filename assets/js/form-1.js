@@ -5,7 +5,8 @@ let form = document.querySelector('.form');
 let fieldset = document.querySelector('.fieldset--data');
 let checkboxes = document.querySelectorAll('input[type=checkbox]')
 let pencilIcons = document.querySelectorAll('.bi-pencil-fill');
-// console.log(pencilcons)
+let spanLabels = document.querySelectorAll(".label")
+// console.log(spanLabels)
 
 
 function displayModal(hideClass, showClass, mainBgClass) {
@@ -27,7 +28,7 @@ pencilIcons.forEach(pencilIcon => {
     let textInput = document.createElement('input')
     textInput.setAttribute('class', 'pencil-input')
     let parent = pencilIcon.parentNode 
-    let label = parent.children[1]
+    let label = parent.children[2]
     textInput.value = label.textContent
     parent.replaceChild(textInput, label)   
     console.log(parent.lastElementChild);
@@ -40,3 +41,4 @@ pencilIcons.forEach(pencilIcon => {
 
 menuButton.addEventListener('click', ()=> { displayModal('hide', 'show','main__add-bg')})
 cancelButton.addEventListener('click', ()=> { hideModal('show', 'hide', 'main__add-bg')})
+

@@ -9,19 +9,29 @@
 html {
     -ms-overflow-style: none; 
     scrollbar-width: none; 
-    overflow-y: scroll; 
+    overflow-y: scroll;
+    overflow-x: hidden; 
 }
 
-html::-webkit-scrollbar {
-    display: none; 
-}
+
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    width: 100%;;
+    width: 100%;
+    height: 100%
 } 
+
+.overlay {
+    position: absolute;
+    background: hsla(254, 15%, 39%, 0.7);
+    min-height: 5400px;
+    width: 100vw;
+    z-index: 5;
+} 
+
+
 
 .wrapper {
     background: url(../IMAGES/bg.JPG) repeat fixed center;
@@ -33,15 +43,14 @@ body {
 .header {
     color: white;
     background-image: linear-gradient(#5c5574, #433e54);
-    z-index: 1;
+    z-index: 6;
     padding: 5px 30px;
     position: fixed; 
     width: 100%;
 }
 
 .main {
-    /* background-color: hsla(255, 30%, 32%, 0.7); */
-    background-color: hsla(240, 6%, 93%, 0.7);
+    background-color: hsla(255, 30%, 32%, 0.2);
 }
 
 .form {
@@ -55,7 +64,7 @@ body {
 .user--sign-out {
     display: flex;
     justify-content: space-between;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .user {
@@ -80,14 +89,15 @@ body {
 
 .search {
     width: 40vw;
-    height: 60%;
+    height: 70%;
     padding: 8px;
     background-color: #888495;
     outline: none;
     border: none;
     border-radius: 5px;
-    box-shadow: 0 0 2px 2px #ccc;
+    box-shadow: 0 0 1px 1px #ccc;
     font-weight: 300;
+    color: #fff;
 }
 
 .bi-search {
@@ -97,10 +107,10 @@ body {
 }
 
 .search::placeholder {
-    font-weight: bold;
     font-size: 1.1rem;
     transform: translate3d(0, 2px, 0);
     color: #f7f7f7;
+    letter-spacing: 0.5px;
 }
 
 .welcome--user__vertical,
@@ -128,8 +138,8 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 1% 10%;
-    padding-bottom: 10px;
-    padding-top: 90px;
+    padding-bottom: 0px;
+    padding-top: 80px;
     margin: 0 0 0 1%;
 }
 
@@ -144,6 +154,10 @@ body {
 .bi-printer,
 .bi-list {
     font-size: 2rem;
+}
+
+.bi-printer {
+    transform: translateY(-2px);
 }
 
 .bi-list {
@@ -200,9 +214,15 @@ h2 {
 }
 
 .individual-field {
-    line-height: 30px;
-    font-weight: bold;
+    line-height: 40px;
+    font-weight: 500;
+    font-size: 1.1rem;
     position: relative;
+    letter-spacing: 0.5px;
+}
+
+.individual-field label {
+    margin-left: 15px
 }
 
 input[type=checkbox]:checked {
@@ -227,7 +247,15 @@ button.print {
 }
 
 .adherence-radio {
-    margin-left: 30px;
+    margin-left: 50px;
+}
+
+.individual-field .ol {
+    margin-left: 45px;
+}
+
+.radio-button {
+    margin-left: 45px;
 }
 
 /* MODAL */
@@ -241,13 +269,14 @@ button.print {
 .modal {
     box-shadow: 0 0 3px #ccc;
     color: #5c5574;
-    font-size: 0.9rem;
+    font-size: 1rem;
     width: 85%;
     border-radius: 5px;
     position: absolute;
-    top: 160px;
+    top: 182px;
     right: 110px;
     background-color: #fff;
+    z-index: 5;
 }
 
 .modal--header {
@@ -258,7 +287,7 @@ button.print {
 .modal--content a {
     text-decoration: none;
     color: #5c5574;
-    font-weight: bold;
+    font-weight: 400;
     line-height: 30px;
 }
 
@@ -293,10 +322,6 @@ button.print {
     display: block;
 }
 
-.main__add-bg {
-    background-color: hsla(254, 15%, 39%, 0.7);
-}
-
 
 
 /* Javascript edit */
@@ -305,14 +330,15 @@ button.print {
     border: none;
     border-bottom: 1px solid black;
     outline: none;
-    font-weight: bold;
-    font-size: 1rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: 0.5;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .bi-mic-fill {
     position: absolute;
     right:7%;
-    top: 15%;
     font-size: 1.2rem;
 }
 
@@ -331,16 +357,22 @@ button.print {
     -moz-appearance: none;
     appearance: none;
     background: white;
-    border: 3px solid #bfbcc5;
-    height: 25px;
-    width:25px;
+    border: 1px solid black;
+    height: 20px;
+    width:18px;
     transform: translateY(35%);
     position: relative;
-    border-radius: 2px;
 }
 
 input:checked {
     background-color: #44386a;
+    border: 2px solid #6c6092;
+    outline-style: solid;
+    outline-color: #bdbcc4;
+    outline-width: 3px;
+    height: 20px;
+    width: 20px;
+    border-radius: 1px;
 }
 
 input:checked:after {

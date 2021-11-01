@@ -130,7 +130,6 @@ span.register-button {
 .field-wrapper-register {
     border-bottom: 2px solid #ececee;
     width: 100%;
-    /* margin: 40px 0; */
 }
 
 .field-wrapper-register input,
@@ -145,27 +144,21 @@ select {
     box-shadow: none;
 }
 
-
-/* span {
-    display: inline-block;
-    width: 200px;
-} */
-
-#id_profession {
-    transform: translateX(56%);
+ #id_profession {
+    padding-right: 20vw;
 }
 
-#id_time_zone {
-    transform: translateX(57%);
-}
+ #id_time_zone {
+    padding-right: 14vw;
+} 
 
-#id_province {
-    transform: translateX(62%);
-}
+ #id_province {
+    padding-right: 18vw;
+} 
 
-#id_country {
-    transform: translateX(68%);
-}
+ #id_country {
+    padding-right: 29vw;
+} 
 
 select {
     opacity: 0.7;
@@ -177,9 +170,10 @@ select {
     margin-bottom: 20px;
 }
 
+
+
 .default_form label {
-    display: inline;
-    /* display: inline-block; */
+    display: inline-block;
     font-size: 1.3rem;
     font-weight: 700;
     padding: 0.25rem 0;
@@ -191,10 +185,6 @@ select {
 }
 
 .default_form {
-    /* display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0; */
     max-width: 90%;
 }
 
@@ -206,9 +196,7 @@ select {
 .default_form input[type="text"], 
 .default_form input[type="email"],
 .default_form input[type="password"], 
-.default_form input[type="tel"], 
-.default_form select {
-    /* font-size: 1.1rem; */
+.default_form input[type="tel"] {
     width: 50%;
     opacity: 0.7;
 }
@@ -218,7 +206,6 @@ select {
 }
 
 .contentcontainer {
-    /* padding: 0 10px; */
     margin: 0 auto;
 }
 
@@ -227,5 +214,18 @@ select {
     margin: 30px 0;
     padding: 7px 50px;
 }
+
+select {
+    display: inline-block;
+    margin-left: 0;
+}
+
+label {
+    display: inline-block;
+}
+
+
+
+
 
 

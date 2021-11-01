@@ -12,6 +12,14 @@ body {
     overflow-y: scroll;
 }
 
+.login-form--header .register-button.active {
+    color: #929292;
+}
+
+.login-form--header .form--header__login:not(.active)  {
+    color: #433e54;
+}
+
 .main {
     display: flex;
     justify-content: space-between;

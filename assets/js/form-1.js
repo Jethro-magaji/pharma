@@ -5,7 +5,9 @@ let overlayContainer = document.querySelector('.overlay-container');
 let fieldset = document.querySelector('.fieldset--data');
 let checkboxes = document.querySelectorAll('input[type=checkbox]')
 let pencilIcons = document.querySelectorAll('.bi-pencil-fill');
-let spanLabels = document.querySelectorAll(".label")
+let spanLabels = document.querySelectorAll(".label");
+let radioButtons = document.querySelectorAll("input[type=radio]");
+console.log(radioButtons);
 
 console.log(overlayContainer)
 
@@ -43,3 +45,15 @@ pencilIcons.forEach(pencilIcon => {
 menuButton.addEventListener('click', ()=> { displayModal('hide', 'show','overlay')})
 cancelButton.addEventListener('click', ()=> { hideModal('show', 'hide', 'overlay')})
 
+function deselectRadioButton(document, radioButtons) {
+ document.addEventListener('mouseup', (e) => {
+     if(e.target.type === 'radio' && e.target.checked === true) {
+         setTimeout(() => {
+             e.target.checked = false
+         }, 0);
+     }
+ })
+}
+
+
+deselectRadioButton(document,radioButtons)

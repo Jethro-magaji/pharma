@@ -26,7 +26,7 @@ body {
 .overlay {
     position: absolute;
     background: hsla(254, 15%, 39%, 0.7);
-    min-height: 5400px;
+    min-height: 5500px;
     width: 100vw;
     z-index: 5;
 } 
@@ -258,8 +258,12 @@ button.print {
     margin-left: 45px;
 }
 
-/* MODAL */
 
+
+
+
+
+/* MODAL */
 .row {
     display: flex;
     justify-content: space-around;
@@ -277,6 +281,7 @@ button.print {
     right: 110px;
     background-color: #fff;
     z-index: 5;
+    box-shadow: 0px 0 10px 10px #b6b6b6;
 }
 
 .modal--header {
@@ -334,6 +339,7 @@ button.print {
     font-size: 1.1rem;
     letter-spacing: 0.5;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    padding-left: 15px;
 }
 
 .bi-mic-fill {
@@ -364,7 +370,7 @@ button.print {
     position: relative;
 }
 
-input:checked {
+input[type=checkbox]:checked {
     background-color: #44386a;
     border: 2px solid #6c6092;
     outline-style: solid;
@@ -375,7 +381,7 @@ input:checked {
     border-radius: 1px;
 }
 
-input:checked:after {
+input[type=checkbox]:checked:after {
     position: absolute;
     content: '\2713';
     color: white;
@@ -384,7 +390,26 @@ input:checked:after {
     top: -2%;
 }
 
+/* radio button */
 
+ input[type=radio] {
+    appearance: none;
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 3px;
+}
+
+input[type=radio]:checked {
+    background-color: red; 
+    border: 3px solid white;
+    background-color: #44386a;
+    outline-color: black;
+    outline-width: 1px; 
+    outline-style: solid; 
+} 
 
 
 

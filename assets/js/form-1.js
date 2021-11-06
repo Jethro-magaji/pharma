@@ -21,8 +21,8 @@ function hideModal(showClass,hideClass,mainBgClass) {
     modal.classList.add(hideClass)
 }
 
-function createAttribute(textInput) {
-    textInput.setAttribute('class', 'pencil-input')
+function createAttribute(textInput,key, value) {
+    textInput.setAttribute(key, value)
 }
 
 
@@ -39,11 +39,13 @@ function hidePencilIcon(pencilIcon) {
 pencilIcons.forEach(pencilIcon => {
     pencilIcon.addEventListener('click', ()=> {
     let textInput = document.createElement('input')
-    createAttribute(textInput)
+    createAttribute(textInput, 'class', 'pencil-input')
+    createAttribute(textInput, 'disabled')
 
     let parent = pencilIcon.parentNode 
     let label = parent.children[2] 
-
+    textInput.value = label.textContent;
+    
     ReplaceLabelWithInput(parent,textInput, label)
 
     hidePencilIcon(pencilIcon)

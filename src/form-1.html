@@ -16,35 +16,35 @@
     <div class="wrapper">
         <header class="header p-2 fixed-top">
             <ul class="nav navbar navbar-dark navbar-expand-lg p-2">
-                <div class="header-wrapper d-flex justify-content-between w-100" >
-                    <li class="nav--log nav-item">
+                <div class="d-flex gap-5 justify-content-between">
+                    <li class="nav--log nav-item ">
                         <a href="http://">
                             <img src="../assets/images/logi33 (1).png" alt="logo"
                             width="300" height="55" class="nav-link p-1">
                         </a>
                     </li>
                     
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     
                     <div class="collapse navbar-collapse" id="navmenu">
-                        <div class="d-flex">
-                            <li class="nav--search-bar nav-item">
+                        <div class="d-flex jiji gap-5">
+                            <li class="nav--search-bar nav-item d-flex gap-1">
                                 <input type="search" name="search" id="search" class="search" placeholder="Search" class="">
-                                <i class="bi bi-search"></i>
+                                <i class="bi bi-search d-none d-lg-block"></i>
                             </li>
-                            <li class="user nav-item">
-                                <div class="welcome-user">
+                            <li class="user nav-item d-flex mt-2 flex-row align-items-center w-50 gap-2 justify-content-between">
+                                <div class="welcome-user d-flex flex-row align-items-middle w-100">
                                     <a href="http://"><i class="bi bi-person-circle align text-white"></i></a>
                     
-                                    <div class="welcome--user__text-vertical">
-                                        <span class="nav--text mr-4">Welcome User</span> <span class="welcome--user__vertical">|</span>
+                                    <div class="welcome--user__text-vertical d-flex align-items-center">
+                                        <span class="nav--text mr-4 d-block w-100">Welcome User</span> <span class="welcome--user__vertical">|</span>
                                     </div>
                                 </div>
-                                <div class="user--sign-out">
+                                <div class="user--sign-out d-flex align-items-center justify-content-start">
                                     <i class="bi bi-arrow-right-circle"></i>
-                                    <a href="#" class="text-white text-decoration-none">Signout</a>
+                                    <a href="#" class="text-white text-decoration-none ml-5">Signout</a>
                                 </div>
                             </li>
                         </div>
@@ -52,7 +52,7 @@
                 </div>
             </ul>
         </header>
-        <div class="behind-header">s</div>
+        <div class="behind-header">.</div>
         <main class="main container-fluid">
             <div class="heading d-flex container px-4 pt-2">
                 <p class="drug-name">Diuretics thiazide</p>
@@ -392,18 +392,15 @@
                         <div class="fieldset--data__six fieldset--data__details">
                             <div class="data-heading py-3 mb-3"><h2>Other Information</h2></div>
 
-                            <div class="individual-field">
-                                <input type="checkbox" class="custom-checkbox" name="pregnany-yes-no" id="pregnany-yes-no">
-                                <span class="label mt-5"></span>
-                                <label mt-5 for="pregnany-yes-no">Pregnancy YES OR NO</label><i class="bi bi-pencil-fill"></i>
+                            <div class="form-check form-switch">
+                                <input type="checkbox" class="form-check-input" name="pregnany-yes-no" id="pregnany-yes-no">
+                                <label class="form-check-label" for="pregnany-yes-no">Pregnancy YES OR NO</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
-                            <div class="individual-field">
-                                <input type="checkbox" class="custom-checkbox" name="if-yes" id="if-yes">
-                   
-                                <span class="label mt-5"></span>             
-                                <label mt-5 for="if-yes">if yes</label><i class="bi bi-pencil-fill"></i>
+                            <div class="form-check form-switch">
+                                <input type="checkbox" class="form-check-input`" name="if-yes" id="if-yes">           
+                                <label class="form-check-label" for="if-yes">if yes</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
@@ -853,12 +850,6 @@
                 </div>
                 <i class="bi bi-x button--cancel"></i>
             </div>
-
-
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
-              </div>
 
 
         </main>

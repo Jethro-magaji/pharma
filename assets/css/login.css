@@ -96,13 +96,6 @@ h1 {
     margin-left: 1rem;
 }
 
-/* .field-wrapper input::placeholder {
-    font-weight: 900; 
-    color: black;
-    margin-left: 5rem;
-    font-size: 1.1rem;
-} */
-
 
 .submit-button {
     padding: 0.5rem 3rem;
@@ -170,8 +163,6 @@ select {
     margin-bottom: 20px;
 }
 
-
-
 .default_form label {
     display: inline-block;
     font-size: 1.3rem;
@@ -200,15 +191,7 @@ select {
     width: 50%;
     opacity: 0.7;
 }
-
-.contentcontainer {
-    width: 600px;
-}
-
-.contentcontainer {
-    margin: 0 auto;
-}
-
+ 
 .button {
     display: block;
     margin: 30px 0;
@@ -220,9 +203,7 @@ select {
     margin-left: 0;
 }
 
-label {
-    display: inline-block;
-}
+
 
 
 

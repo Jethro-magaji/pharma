@@ -16,55 +16,48 @@ html {
 
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    width: 100%;
-    height: 100%
-} 
+    background-color: #f7f7f7 !important;
+}  
 
-.overlay {
+.overlays {
     position: absolute;
     background: hsla(254, 15%, 39%, 0.7);
     min-height: 5500px;
-    width: 100vw;
+    width: 100vw !important;
     z-index: 5;
+    margin-right: 100px;
 } 
 
-
-
-.wrapper {
-    background: url(../IMAGES/bg.JPG) repeat fixed center;
+.main {
+    background-image: linear-gradient(to bottom, hsla(254, 15%, 39%, 0.2), hsla(254, 15%, 39%, 0.2)), url('../IMAGES/bg.JPG');
     background-size: cover;
-    height: 100vh;
+    height: 28vw;
     width: 100vw;
+    padding-top: 5%;
 }
+
+.behind-header {
+    width: 100%;
+    height: 50px;
+}
+
 
 .header {
     color: white;
     background-image: linear-gradient(#5c5574, #433e54);
     z-index: 6;
-    padding: 5px 30px;
-    position: fixed; 
+    position: fixed;
     width: 100%;
 }
 
-.main {
-    background-color: hsla(255, 30%, 32%, 0.2);
-}
 
 .form {
-    position: relative;
+    border-radius: 20px;
 }
 
-.nav,
-.user,
-.welcome-user,
-.welcome--user__text-vertical,
-.user--sign-out {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 400;
+.fieldset {
+    border-radius: 20px 20px 20px 20px;
 }
 
 .user {
@@ -98,6 +91,7 @@ body {
     box-shadow: 0 0 1px 1px #ccc;
     font-weight: 300;
     color: #fff;
+    /* transform: translateX(90px); */
 }
 
 .bi-search {
@@ -113,10 +107,9 @@ body {
     letter-spacing: 0.5px;
 }
 
-.welcome--user__vertical,
-.bi-person-circle,
-.bi-arrow-right-circle {
-    align-self: center;
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .welcome--user__vertical {
@@ -124,9 +117,7 @@ body {
     padding-bottom: 3px;
 }
 
-.user--sign-out {
-    transform: translateX(-15px);
-}
+
 
 .bi-person-circle,
 .bi-arrow-right-circle {
@@ -134,30 +125,15 @@ body {
     font-size: 1.2rem;
 }
 
-.heading {
+ .heading {
     display: flex;
     justify-content: space-between;
-    padding: 1% 10%;
-    padding-bottom: 0px;
-    padding-top: 80px;
-    margin: 0 0 0 1%;
-}
+} 
 
-.heading--icon {
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-    margin-right: 10px;
-    width: 10%;
-}
 
 .bi-printer,
 .bi-list {
     font-size: 2rem;
-}
-
-.bi-printer {
-    transform: translateY(-2px);
 }
 
 .bi-list {
@@ -180,23 +156,10 @@ body {
     font-weight: bold;
 }
 
-.fieldset {
-    outline: none;
-    border: none;
-    background: white;
-    width: 80%;
-    margin:0 auto;
-    box-shadow: 0px 0px 3px #ccc;
-    border-radius: 20px;
-    padding:0;
-    padding-bottom: 50px;
-}
 
 .data-heading {
     background:linear-gradient(90deg, #ededef, 30%, #ededef, 40%, #f5f5f7, 65% ,#fbfbfd, 75%, #ffffff);
-    padding: 1px 20px 0px 1px;
-    height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 0px !important;
     border-bottom: 1px solid rgb(155, 137, 137);
 }
 
@@ -205,7 +168,7 @@ body {
 }
 
 h2 {
-    transform: translateY(-10px);
+    margin-bottom: 0 !important;
 }
 
 .individual-field,
@@ -225,9 +188,9 @@ h2 {
     margin-left: 15px
 }
 
-input[type=checkbox]:checked {
+/* input[type=checkbox]:checked {
  color: red;
-}
+} */
 
 .fieldset--data__details {
     margin-bottom: 20px;
@@ -259,54 +222,59 @@ button.print {
 }
 
 
-
-
-
-
 /* MODAL */
-.row {
+
+/* .col {
+    display: flex;
+    flex-direction: column;
+} */
+ /* .row-modal {
     display: flex;
     justify-content: space-around;
-}    
+}      */
 
 
-.modal {
+.modal-custom {
     box-shadow: 0 0 3px #ccc;
     color: #5c5574;
     font-size: 1rem;
-    width: 85%;
+    width: 90%;
     border-radius: 5px;
-    position: absolute;
-    top: 182px;
-    right: 110px;
+    position: absolute; 
+    top: 198px; 
+    /* right: 1px;  */
     background-color: #fff;
-    z-index: 5;
-    box-shadow: 0px 0 10px 10px #b6b6b6;
+    z-index: 7;
+    /* box-shadow: 0px 0 10px 10px #b6b6b6;  */
 }
 
-.modal--header {
-    margin-bottom: -20px;
-}
+ .modal--header {
+    font-size: 1.75rem;
+} 
 
 
-.modal--content a {
+ .modal--content a {
     text-decoration: none;
     color: #5c5574;
     font-weight: 400;
     line-height: 30px;
 }
 
-.modal--content__padding {
+ /* .modal--content__padding {
     padding-top: 30px
-}
+}  */
 
-.adjust-padding {
-    transform: translateX(-30px);
-}
+ .adjust-padding {
+    /* transform: translateX(30px); */
+} 
 
-.bi-x {
+/* .modal--content ul {
+    padding-left: 0 !important;
+} */
+
+ .bi-x {
     position: absolute;
-    top: -2%;
+    top: -4%;
     right: 0;
     margin: 0px;
     font-weight: bold;
@@ -314,7 +282,7 @@ button.print {
     border: none;
     padding:0;
     font-size: 4rem;
-}
+} 
 
 
 
@@ -344,7 +312,7 @@ button.print {
 
 .bi-mic-fill {
     position: absolute;
-    right:7%;
+    right:8%;
     font-size: 1.2rem;
 }
 
@@ -366,11 +334,11 @@ button.print {
     border: 1px solid black;
     height: 20px;
     width:18px;
-    transform: translateY(35%);
+    transform: translateY(15%);
     position: relative;
 }
 
-input[type=checkbox]:checked {
+input[type=checkbox].custom-checkbox:checked {
     background-color: #44386a;
     border: 2px solid #6c6092;
     outline-style: solid;
@@ -381,35 +349,32 @@ input[type=checkbox]:checked {
     border-radius: 1px;
 }
 
-input[type=checkbox]:checked:after {
+input[type=checkbox].custom-checkbox:checked:after {
     position: absolute;
     content: '\2713';
     color: white;
     text-align: center;
-    left: 20%;
-    top: -2%;
+    left: 19%;
+    top: -12px;
 }
 
-/* radio button */
+/* bootstrap switches */
 
- input[type=radio] {
-    appearance: none;
-    border-radius: 50%;
-    border: 1px solid black;
-    height: 20px;
-    width: 20px;
-    position: relative;
-    top: 3px;
+.form-check-input:checked {
+    outline-width: 1px !important;
+    outline-color: #6c6092 !important;
+    border: 3px solid #6c6092 !important;
+    background-color: #44386a !important;
 }
 
-input[type=radio]:checked {
-    background-color: red; 
-    border: 3px solid white;
-    background-color: #44386a;
-    outline-color: black;
-    outline-width: 1px; 
-    outline-style: solid; 
-} 
+/* input[type=search] {
+    border: 2px solid red;
+}
+
+.user.nav-item.d-flex.mt-2.flex-row.align-items-center{
+    border: 2px solid red;
+} */
+ 
 
 
 

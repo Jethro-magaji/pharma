@@ -5,100 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/form-1.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/f7276685db.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-<body>
+<body pb-4>
     <div class="wrapper">
-        <header class="header">
-            <nav class="nav">
-                <div class="nav--logo">
-                    <img src="../assets/images/logi33 (1).png" alt="logo" width="300" height="45">
-                </div>
-
-                <div class="nav--search-bar">
-                    <input type="search" name="search" id="search" class="search" placeholder="Search" results>
-                    <i class="bi bi-search"></i>
-                </div>
-
-                <div class="user">
-                    <div class="welcome-user">
-                        <i class="bi bi-person-circle"></i>
-                        
-                        <div class="welcome--user__text-vertical">
-                            <p class="nav--text">Welcome User</p> <span class="welcome--user__vertical">|</span>
+        <header class="header p-2 fixed-top">
+            <ul class="nav navbar navbar-dark navbar-expand-lg p-2">
+                <div class="header-wrapper d-flex justify-content-between w-100" >
+                    <li class="nav--log nav-item">
+                        <a href="http://">
+                            <img src="../assets/images/logi33 (1).png" alt="logo"
+                            width="300" height="55" class="nav-link p-1">
+                        </a>
+                    </li>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navmenu">
+                        <div class="d-flex">
+                            <li class="nav--search-bar nav-item">
+                                <input type="search" name="search" id="search" class="search" placeholder="Search" class="">
+                                <i class="bi bi-search"></i>
+                            </li>
+                            <li class="user nav-item">
+                                <div class="welcome-user">
+                                    <a href="http://"><i class="bi bi-person-circle align text-white"></i></a>
+                    
+                                    <div class="welcome--user__text-vertical">
+                                        <span class="nav--text mr-4">Welcome User</span> <span class="welcome--user__vertical">|</span>
+                                    </div>
+                                </div>
+                                <div class="user--sign-out">
+                                    <i class="bi bi-arrow-right-circle"></i>
+                                    <a href="#" class="text-white text-decoration-none">Signout</a>
+                                </div>
+                            </li>
                         </div>
                     </div>
-
-                    <div class="user--sign-out">
-                        <i class="bi bi-arrow-right-circle"></i>
-                        <p>Signout</p>
-                    </div>
                 </div>
-            </nav>
+            </ul>
         </header>
-        <main class="main">
-            <div class="heading">
+        <div class="behind-header">s</div>
+        <main class="main container-fluid">
+            <div class="heading d-flex container px-4 pt-2">
                 <p class="drug-name">Diuretics thiazide</p>
 
-                <div class="heading--icon">
+                <div class="heading--icon d-flex gap-4 justify-content-end w-25">
                     <i class="bi bi-printer"></i>
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars mt-2"></i>
                 </div>
             </div>
-            <div class="overlay-container"></div>
-            <form action="" class="form">
-                <fieldset class="fieldset">
-                    <div class="fieldset--data">
-                        <div class="fieldset--data__one fieldset--data__details">
-                            <div class="data-heading data--heading__border-radius"><h2>Lab Test & Blood Pressure</h2></div>
+            <div class="overlay-container container-fluid m-0"></div>
+            <form action="" class="form container bg p-0">
+                <fieldset class="fieldset w-100 shadow bg-white">
+                    <div class="fieldset--data w-100">
+                        <div class="fieldset--data__one fieldset--data__details w-100">
+                            <div class="data-heading py-3 mb-3 data--heading__border-radius w-100 "><h2>Lab Test & Blood Pressure</h2></div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="starting-new-med" id="starting-new-med">
-                                <span class="label"></span>
-                                <label for="starting-new-med">Starting New Medication</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="starting-new-med">Starting New Medication</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="refill" id="refill">
                    
-                                <span class="label"></span>             
-                                <label for="refill">Refill</label><i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
+                                <span class="label mt-5"></span>             
+                                <label mt-5 for="refill">Refill</label><i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
                         </div>
 
                         <div class="fieldset--data__two fieldset--data__details">
-                            <div class="data-heading"><h2>Lab Test & Blood Pressure</h2></div>
+                            <div class="data-heading py-3 mb-3"><h2>Lab Test & Blood Pressure</h2></div>
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="lab-test-blood-pressure" id="lab-test-blood-pressure">
-                                <span class="label"></span>
-                                <label for="lab-test-blood-pressure">See Netcare Records for Lab Test</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="lab-test-blood-pressure">See Netcare Records for Lab Test</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="crcl" id="crcl">
                        
-                                <span class="label"></span>         
-                                <label for="crcl">Crcl**box** mL/min</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>         
+                                <label mt-5 for="crcl">Crcl**box** mL/min</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="blood-pressure" id="blood-pressure">
    
-                                <span class="label"></span>                             
-                                <label for="blood-pressure">Blood Pressure**box**</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>                             
+                                <label mt-5 for="blood-pressure">Blood Pressure**box**</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="heart-rate" id="heart-rate">
            
-                                <span class="label"></span>                    
-                                <label for="heart-rate">Heart Rate**box**</label>
+                                <span class="label mt-5"></span>                    
+                                <label mt-5 for="heart-rate">Heart Rate**box**</label>
                                 <i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
@@ -106,34 +121,34 @@
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="na+" id="na+">
                          
-                                <span class="label"></span>      
-                                <label for="na+">Na+**box**</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>      
+                                <label mt-5 for="na+">Na+**box**</label mt-5><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="k+" id="k+">
                            
-                                <span class="label"></span>     
-                                <label for="k+">K+**box**</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>     
+                                <label mt-5 for="k+">K+**box**</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="other" id="other">
                      
-                                <span class="label"></span>           
-                                <label for="other">other**box**</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>           
+                                <label mt-5 for="other">other**box**</label ><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                         </div>
                         <div class="fieldset--data__three fieldset--data__details">
-                            <div class="data-heading"><h2>Indication</h2></div>
+                            <div class="data-heading py-3 mb-3"><h2>Indication</h2></div>
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox first-input-with-list" name="diuretics-is-indicated" id="diuretics-is-indicated">
-                                <span class="label"></span>
-                                <label for="diuretics-is-indicated">**diuretics** is indicated for</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="diuretics-is-indicated">**diuretics** is indicated for</label ><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>  
                                     <ol class="ol">
                                         <li>Hypertension</li>
@@ -145,8 +160,8 @@
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="diuretics-is-not" id="diuretics-is-not">
-                                <span class="label"></span>
-                                <label for="diuretics-is-not">**diuretics** Is Not indicated For Current Medical Condition</label>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="diuretics-is-not">**diuretics** Is Not indicated For Current Medical Condition</label >
                                 <i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
@@ -154,16 +169,16 @@
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="prescribe" id="prescribe">
              
-                                <span class="label"></span>                   
-                                <label for="prescribe">Prescribe As Off Label use.</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>                   
+                                <label mt-5 for="prescribe">Prescribe As Off Label mt-5 use.</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="other-three" id="other-three">
          
-                                <span class="label"></span>                       
-                                <label for="other-three">Other</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>                       
+                                <label mt-5 for="other-three">Other</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
@@ -172,116 +187,120 @@
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="fully-effective" id="fully-effective">
  
-                                <span class="label"></span>                               
-                                <label for="fully-effective">**lol ** is fully effective for **as above**</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>                               
+                                <label mt-5 for="fully-effective">**lol ** is fully effective for **as above**</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="partially-effective" id="partially-effective">
-                                <span class="label"></span>
-                                <label for="partially-effective">**lol ** Is partially effective for **as above**</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="partially-effective">**lol ** Is partially effective for **as above**</label ><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="not-effective" id="not-effective">
-                                <span class="label"></span>                           
-                                <label for="not-effective">**lol ** Is not effective for **as above**</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>                           
+                                <label mt-5 for="not-effective">**lol ** Is not effective for **as above**</label ><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="start-new-med" id="start-new-med">
      
-                                <span class="label"></span>                           
-                                <label for="start-new-med">Patient is starting as a new medication and expected to see efficacy for current medical conditions.</label>
+                                <span class="label mt-5"></span>                           
+                                <label mt-5 for="start-new-med">Patient is starting as a new medication and expected to see efficacy for current medical conditions.</label mt-5>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="other-three-two" id="other-three-two">
  
-                                <span class="label"></span>                               
-                                <label for="other-three-two">other</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>                               
+                                <label mt-5 for="other-three-two">other</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
                         </div>
 
                         <div class="fieldset--data__four fieldset--data__details">
-                            <div class="data-heading"><h2>Safety</h2></div>
+                            <div class="data-heading py-3 mb-3"><h2>Safety</h2></div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="increase-urination" id="increase-urination">
-                                <span class="label"></span>
-                                <label for="increase-urination">increase in urination is very common with diuretic medication</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="increase-urination">increase in urination is very common with diuretic medication</label ><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="no-side-effect" id="no-side-effect">
    
-                                <span class="label"></span>                             
-                                <label for="no-side-effect">No side effects from **LOL  ** medication</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>                             
+                                <label mt-5 for="no-side-effect">No side effects from **LOL  ** medication</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox first-input-with-radio" name="side-effect" id="side-effect">
-                                <span class="label"></span>
-                                <label for="side-effect" class="input-with-radio">Patient has side effects like (yes or no option if no s/es then no option above all side effects)</label>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="side-effect" class="input-with-radio">Patient has side effects like (yes or no option if no s/es then no option above all side effects)</label >
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
-                                    <div class="radio-button">
-                                        <input type="radio" name="lower-blood-pressure" id="lower-blood-pressure">
-                                        <label for="lower-blood-pressure">Lower blood pressure symptoms like dizziness lightHeadedness, fainting, blurred vision</label>
+
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" name="lower-blood-pressure" 
+                                        id="lower-blood-pressure" checked>
+                                        <label class="form-check-label" for="lower-blood-pressure">
+                                            Lower blood pressure symptoms like dizziness lightHeadedness, fainting, blurred vision
+                                        </label>
                                     </div>
 
-                                    <div class="radio-button">
-                                        <input type="radio" name="postural-hypertension" id="postural-hypertension">
-                                        <label for="postural-hypertension">Postural hypotension yes or no option</label>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" class="" name="postural-hypertension" id="postural-hypertension">
+                                        <label class="form-check-label" for="postural-hypertension">Postural hypotension yes or no option</label>
                                     </div>
 
-                                    <div class="radio-button">
-                                        <input type="radio" name="hyperglycemia" id="hyperglycemia">
-                                        <label for="hyperglycemia">Hyperglycemia</label>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" name="hyperglycemia" id="hyperglycemia">
+                                        <label class="form-check-label" mt-5 for="hyperglycemia">Hyperglycemia</label>
                                     </div>
 
-                                    <div class="radio-button">
-                                        <input type="radio" name="hypokalemia" id="hypokalemia">
-                                        <label for="hypokalemia">hypokalemia</label>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" name="hypokalemia" id="hypokalemia">
+                                        <label class="form-check-label" for="hypokalemia">hypokalemia</label>
                                     </div>
 
-                                    <div class="radio-button">
-                                        <input type="radio" name="hyponatremia" id="hyponatremia">
-                                        <label for="hyponatremia">Hyponatremia</label>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" name="hyponatremia" id="hyponatremia">
+                                        <label class="form-check-label"  for="hyponatremia">Hyponatremia</label >
                                     </div>
-                                    <div class="radio-button">
-                                        <input type="radio" name="hyperuricemia" id="hyperuricemia">
-                                        <label for="hyperuricemia">Hyperuricemia</label>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" name="hyperuricemia" id="hyperuricemia">
+                                        <label class="form-check-label" for="hyperuricemia">Hyperuricemia</label>
                                     </div>
-                                    <div class="radio-button">
-                                        <input type="radio" name="arrhythmia" id="arrhythmia">
-                                        <label for="arrhythmia">Arrhythmias</label>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" name="arrhythmia" id="arrhythmia">
+                                        <label class="form-check-label" for="arrhythmia">Arrhythmias</label>
                                     </div>
-                                    <div class="radio-button">
-                                        <input type="radio" name="hypernatremia" id="hypernatremia">
-                                        <label for="hypernatremia">hypernatremia</label>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" name="hypernatremia" id="hypernatremia">
+                                        <label class="form-check-label" for="hypernatremia">hypernatremia</label>
                                     </div>
-                                    <div class="radio-button">
-                                        <input type="radio" name="weight-gain" id="weight-gain">
-                                        <label for="weight-gain">Weight gain</label>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" name="weight-gain" id="weight-gain">
+                                        <label class="form-check-label" for="weight-gain">Weight gain</label>
                                     </div>
-                                    <div class="radio-button">
-                                        <input type="radio" name="gi" id="gi">
-                                        <label for="gi">GI side effects like constipation, diarrhea, digestion problems, dry mouth</label>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" name="gi" id="gi">
+                                        <label class="form-check-label" for="gi">GI side effects like constipation, diarrhea, digestion problems, dry mouth</label>
                                     </div>
-                                    <div class="radio-button">
-                                        <input type="radio" name="cardio" id="cardio">
-                                        <label for="cardio">Cardiovascular symptoms like tachycardia,heart palpitation</label>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" name="cardio" id="cardio">
+                                        <label class="form-check-label" for="cardio">Cardiovascular symptoms like tachycardia,heart palpitation</label>
                                     </div>
-                                    <div class="radio-button">
-                                        <input type="radio" name="other-four" id="other-four">
-                                        <label for="other-four">Other**box**</label>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" name="other-four" id="other-four">
+                                        <label class="form-check-label" for="other-four">Other**box**</label>
                                     </div>
                                 
                             </div>
@@ -289,81 +308,81 @@
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="drug-toxicity" id="drug-toxicity">
      
-                                <span class="label"></span>                           
-                                <label for="drug-toxicity">Any signs of Drug toxicity  like hypovolemia,muscle symptoms,electrolyte imbalance, hepatotoxicity</label>
+                                <span class="label mt-5"></span>                           
+                                <label mt-5 for="drug-toxicity">Any signs of Drug toxicity  like hypovolemia,muscle symptoms,electrolyte imbalance, hepatotoxicity</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="other-four-two" id="other-four-two">
    
-                                <span class="label"></span>                             
-                                <label for="other-four-two">Other**box**</label>
+                                <span class="label mt-5"></span>                             
+                                <label mt-5 for="other-four-two">Other**box**</label >
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="drug-withdrawal" id="drug-withdrawal">
  
-                                <span class="label"></span>                               
-                                <label for="drug-withdrawal">Drug withdrawal symptoms**yes or no if yes please describe box**</label>
+                                <span class="label mt-5"></span>                               
+                                <label mt-5 for="drug-withdrawal">Drug withdrawal symptoms**yes or no if yes please describe box**</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="other-four-three" id="other-four-three">
-                                <span class="label"></span>
-                                <label for="other-four-three">Other**box**</label>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="other-four-three">Other**box**</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
                         </div>
 
                         <div class="fieldset--data__five fieldset--data__details">
-                            <div class="data-heading"><h2>Adherence</h2></div>
+                            <div class="data-heading py-3 mb-3"><h2>Adherence</h2></div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="starting-as-new-med" id="starting-as-new-med">
-                                <span class="label"></span>
-                                <label for="starting-as-new-med">Starting as new medication and expected to take regularly for indicated medical conditions.</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="starting-as-new-med">Starting as new medication and expected to take regularly for indicated medical conditions.</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="take-prescribed" id="take-prescribed">
                                 
-                                <span class="label"></span>                               
-                                <label for="take-prescribed">Take **same** as prescribed</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>                               
+                                <label mt-5 for="take-prescribed">Take **same** as prescribed</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="financial-cost" id="financial-cost">
                                 
-                                <span class="label"></span>                             
-                                <label for="financial-cost">Not Taking **above** regularly due to financial cost of medication</label>
+                                <span class="label mt-5"></span>                             
+                                <label mt-5 for="financial-cost">Not Taking **above** regularly due to financial cost of medication</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox second-input-with-radio" name="not-taking" id="not-taking">
-                                <span class="label"></span>
-                                <label for="not-taking">Not taking **above** regularly due to</label><i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="not-taking">Not taking **above** regularly due to</label><i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                                 <div class="adherence-radio">
-                                    <div>
-                                        <input type="radio" name="pill-burden" id="pill-burden">
-                                        <label  for="pill-burden">Pill burden/too many doses</label>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" name="pill-burden" id="pill-burden">
+                                        <label class="form-check-label" for="pill-burden">Pill burden/too many doses</label>
                                     </div>
-                                    <div>
-                                        <input type="radio" name="Uncomfortable" id="Uncomfortable">
-                                        <label for="Uncomfortable">Uncomfortable/inconvenient</label>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" name="Uncomfortable" id="Uncomfortable">
+                                        <label class="form-check-label" or="Uncomfortable">Uncomfortable/inconvenient</label>
                                     </div>
-                                    <div>
-                                        <input type="radio" name="take-same" id="take-same">
-                                        <label for="take-same">Take **same** more than prescribed.</label>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" name="take-same" id="take-same">
+                                        <label class="form-check-label" or="take-same">Take **same** more than prescribed.</label>
                                     </div>
-                                    <div>
-                                        <input type="radio" name="other-five" id="other-five">
-                                        <label for="other-five">OTHER**BOX**</label>
+                                    <div class="form-check form-switch">
+                                        <input type="checkbox" class="form-check-input" name="other-five" id="other-five">
+                                        <label class="form-check-label" or="other-five">OTHER**BOX**</label>
                                     </div>
                                 </div>
                             </div>
@@ -371,86 +390,86 @@
                         </div>
 
                         <div class="fieldset--data__six fieldset--data__details">
-                            <div class="data-heading"><h2>Other Information</h2></div>
+                            <div class="data-heading py-3 mb-3"><h2>Other Information</h2></div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="pregnany-yes-no" id="pregnany-yes-no">
-                                <span class="label"></span>
-                                <label for="pregnany-yes-no">Pregnancy YES OR NO</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="pregnany-yes-no">Pregnancy YES OR NO</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="if-yes" id="if-yes">
                    
-                                <span class="label"></span>             
-                                <label for="if-yes">if yes</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>             
+                                <label mt-5 for="if-yes">if yes</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="how-many-weeks" id="how-many-weeks">
                    
-                                <span class="label"></span>             
-                                <label for="how-many-weeks">HOW MANY WEEKS ________</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>             
+                                <label mt-5 for="how-many-weeks">HOW MANY WEEKS ________</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="breastfeeding" id="breastfeeding">
                    
-                                <span class="label"></span>             
-                                <label for="breastfeeding">Breastfeeding YES OR NO</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>             
+                                <label mt-5 for="breastfeeding">Breastfeeding YES OR NO</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
                         </div>
 
                         <div class="fieldset--data__seven fieldset--data__details">
-                            <div class="data-heading"><h2>Assesment</h2></div>
+                            <div class="data-heading py-3 mb-3"><h2>Assesment</h2></div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="therapy" id="therapy">
                  
-                                <span class="label"></span>               
-                                <label for="therapy">Therapy appropriate</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>               
+                                <label mt-5 for="therapy">Therapy appropriate</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="drug-therapy" id="drug-therapy">
        
-                                <span class="label"></span>                         
-                                <label for="drug-therapy">Additional drug therapy needed</label>
+                                <span class="label mt-5"></span>                         
+                                <label mt-5 for="drug-therapy">Additional drug therapy needed</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="unnecessary-therapy" id="unnecessary-therapy">
-                                <span class="label"></span>
-                                <label for="unnecessary-therapy">Unnecessary drug therapy</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="unnecessary-therapy">Unnecessary drug therapy</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="switch-med" id="switch-med">
            
-                                <span class="label"></span>                     
-                                <label for="switch-med">Switch medication(s)</label>
+                                <span class="label mt-5"></span>                     
+                                <label mt-5 for="switch-med">Switch medication(s)</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="current-medication-effect" id="current-medication-effect">
-                                <span class="label"></span>
-                                <label for="current-medication-effect">Side effects from current treatment</label>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="current-medication-effect">Side effects from current treatment</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="low-dose" id="low-dose">
                
-                                <span class="label"></span>                 
-                                <label for="low-dose">Dose is too low</label>
+                                <span class="label mt-5"></span>                 
+                                <label mt-5 for="low-dose">Dose is too low</label>
                                 <i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
@@ -458,36 +477,36 @@
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="high-dose" id="high-dose">
              
-                                <span class="label"></span>                   
-                                <label for="high-dose">Dose is too high</label>
+                                <span class="label mt-5"></span>                   
+                                <label mt-5 for="high-dose">Dose is too high</label>
                                 <i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="adherence/compliance" id="adherence/compliance">
-                                <span class="label"></span>
-                                <label for="adherence/compliance">Adherence/compliance problem</label>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="adherence/compliance">Adherence/compliance problem</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="other-seven" id="other-seven">
          
-                                <span class="label"></span>                       
-                                <label for="other-seven">Other**box**</label>
+                                <span class="label mt-5"></span>                       
+                                <label mt-5 for="other-seven">Other**box**</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
                         </div>
 
                         <div class="fieldset--data__eight fieldset--data__details">
-                            <div class="data-heading"><h2>Plan</h2></div>
+                            <div class="data-heading py-3 mb-3"><h2>Plan</h2></div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="no-intervention" id="no-intervention">
                                 
-                                <span class="label"></span>                               
-                                <label for="no-intervention">No intervention needed</label>
+                                <span class="label mt-5"></span>                               
+                                <label mt-5 for="no-intervention">No intervention needed</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                                 
                             </div>
@@ -495,54 +514,54 @@
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="add-new-med" id="add-new-med">
          
-                                <span class="label"></span>                      
-                                <label for="add-new-med">Add new medication. **box**</label>
+                                <span class="label mt-5"></span>                      
+                                <label mt-5 for="add-new-med">Add new medication. **box**</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="discontinue-med" id="discontinue-med">
  
-                                <span class="label"></span>                               
-                                <label for="discontinue-med">discontinue medication. **box**</label>
+                                <span class="label mt-5"></span>                               
+                                <label mt-5 for="discontinue-med">discontinue medication. **box**</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="switch-med-eight" id="switch-med-eight">
-                                <span class="label"></span>
-                                <label for="switch-med-eight">Switch medication(s) **box**</label>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="switch-med-eight">Switch medication(s) **box**</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="increase-dose" id="increase-dose">
      
-                                <span class="label"></span>                           
-                                <label for="increase-dose">Increase dose **box**</label>
+                                <span class="label mt-5"></span>                           
+                                <label mt-5 for="increase-dose">Increase dose **box**</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="decrease-dose" id="decrease-dose">
      
-                                <span class="label"></span>                           
-                                <label for="decrease-dose">Decrease dose**box**</label>
+                                <span class="label mt-5"></span>                           
+                                <label mt-5 for="decrease-dose">Decrease dose**box**</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="dosing-time" id="dosing-time">
          
-                                <span class="label"></span>                       
-                                <label for="dosing-time">Dosing time/interval change**box**</label>
+                                <span class="label mt-5"></span>                       
+                                <label mt-5 for="dosing-time">Dosing time/interval change**box**</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
                             
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox second-input-with-list" name="non-pharm" id="non-pharm">
-                                <span class="label"></span>
-                                <label for="non-pharm">Provide Non Pharmacological treatment like</label>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="non-pharm">Provide Non Pharmacological treatment like</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                                 <ol class="ol">
                                     <li>
@@ -574,190 +593,190 @@
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="provide-edu" id="provide-edu">
          
-                                <span class="label"></span>                       
-                                <label for="provide-edu">Provide patient education/info.</label>
+                                <span class="label mt-5"></span>                       
+                                <label mt-5 for="provide-edu">Provide patient education/info.</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="refer-physician" id="refer-physician">
  
-                                <span class="label"></span>                               
-                                <label for="refer-physician">Refer to the physician.</label>
+                                <span class="label mt-5"></span>                             
+                                <label mt-5 for="refer-physician">Refer to the physician.</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="refer-other" id="refer-other">
          
-                                <span class="label"></span>                       
-                                <label for="refer-other">Refer to other healthcare professionals.</label>
+                                <span class="label mt-5"></span>                       
+                                <label mt-5 for="refer-other">Refer to other healthcare professionals.</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="other-eight" id="other-eight">
          
-                                <span class="label"></span>                       
-                                <label for="other-eight">Other**box**</label>
+                                <span class="label mt-5"></span>                       
+                                <label mt-5 for="other-eight">Other**box**</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
                         </div>
 
                         <div class="fieldset--data__nine fieldset--data__details">
-                            <div class="data-heading"><h2>Monitoring and Follow Up</h2></div>
+                            <div class="data-heading py-3 mb-3"><h2>Monitoring and Follow Up</h2></div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="monitor-side-effects" id="monitor-side-effects">
-                                <span class="label"></span>
-                                <label for="monitor-side-effects">Monitor patient for any of the above side effects.</label>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="monitor-side-effects">Monitor patient for any of the above side effects.</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                                 
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="monitor-toxicity" id="monitor-toxicity">
-                                <span class="label"></span>
-                                <label for="monitor-toxicity">Monitor patient for any of above drug toxicity symptoms**box**</label>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="monitor-toxicity">Monitor patient for any of above drug toxicity symptoms**box**</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="monitor-bp" id="monitor-bp">
            
-                                <span class="label"></span>                     
-                                <label for="monitor-bp">Monitor for blood pressure and heart rate</label>
+                                <span class="label mt-5"></span>                     
+                                <label mt-5 for="monitor-bp">Monitor for blood pressure and heart rate</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="monitor-hyper-hypo" id="monitor-hyper-hypo">
-                                <span class="label"></span>
-                                <label for="monitor-hyper-hypo">Monitor for hyperglycemia,hypokalemia,hyponatremia,hyperuricemia,hypernatremia</label>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="monitor-hyper-hypo">Monitor for hyperglycemia,hypokalemia,hyponatremia,hyperuricemia,hypernatremia</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="monitor-hyper-hypo" id="monitor-hyper-hypo">
-                                <span class="label"></span>
-                                <label for="monitor-hyper-hypo">Other**box**</label>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="monitor-hyper-hypo">Other**box**</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
                         </div>
                         <div class="fieldset--data__ten fieldset--data__details">
-                            <div class="data-heading"><h2>Patient Follow up date</h2></div>
+                            <div class="data-heading py-3 mb-3"><h2>Patient Follow up date</h2></div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="follow-up" id="follow-up">
              
-                                <span class="label"></span>                   
-                                <label for="follow-up">No follow up required</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>                   
+                                <label mt-5 for="follow-up">No follow up required</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="next-visit" id="next-visit">
            
-                                <span class="label"></span>                     
-                                <label for="next-visit">At next pharmacy visit</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>                     
+                                <label mt-5 for="next-visit">At next pharmacy visit</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="7-days" id="7-days">
                    
-                                <span class="label"></span>             
-                                <label for="7-days">After 7 days</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>             
+                                <label mt-5 for="7-days">After 7 days</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="14-days" id="14-days">
                  
-                                <span class="label"></span>               
-                                <label for="14-days">After 14 days</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>               
+                                <label mt-5 for="14-days">After 14 days</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="21-days" id="21-days">
                  
-                                <span class="label"></span>               
-                                <label for="21-days">After 21 days</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>               
+                                <label mt-5 for="21-days">After 21 days</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="1-month" id="1-month">
                  
-                                <span class="label"></span>               
-                                <label for="1-month">After 1 month</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>               
+                                <label mt-5 for="1-month">After 1 month</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="3-month" id="3-month">
                  
-                                <span class="label"></span>               
-                                <label for="3-month">After 3 months</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>               
+                                <label mt-5 for="3-month">After 3 months</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="6-month" id="6-month">
                  
-                                <span class="label"></span>               
-                                <label for="6-month">After 6 months</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>               
+                                <label mt-5 for="6-month">After 6 months</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="1-year" id="1-year">
                    
-                                <span class="label"></span>             
-                                <label for="1-year">After 1 year</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>             
+                                <label mt-5 for="1-year">After 1 year</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="other-nine" id="other-nine">
            
-                                <span class="label"></span>                     
-                                <label for="other-nine">Other **box**</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>                     
+                                <label mt-5 for="other-nine">Other **box**</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>    
                         </div>
                         <div class="fieldset--data__eleven fieldset--data__details">
-                            <div class="data-heading"><h2>Professional follow up</h2></div>
+                            <div class="data-heading py-3 mb-3"><h2>Professional follow up</h2></div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="no-prof-follow" id="no-follow-up">
      
-                                <span class="label"></span>                           
-                                <label for="no-follow-up">No professional follow up is required at this movement</label><i class="bi bi-pencil-fill"></i>
+                                <span class="label mt-5"></span>                           
+                                <label mt-5 for="no-follow-up">No professional follow up is required at this movement</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="pharm-follow" id="pharm-follow">
        
-                                <span class="label"></span>                         
-                                <label for="pharm-follow">Pharmacists follow up with physicians.</label>
+                                <span class="label mt-5"></span>                         
+                                <label mt-5 for="pharm-follow">Pharmacists follow up with physicians.</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="pharm-prof-follow" id="pharm-prof-follow">
-                                <span class="label"></span>
-                                <label for="pharm-prof-follow">Pharmacist to follow up with other healthcare professionals.</label>
+                                <span class="label mt-5"></span>
+                                <label mt-5 for="pharm-prof-follow">Pharmacist to follow up with other healthcare professionals.</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="other-ten" id="other-ten">
              
-                                <span class="label"></span>                   
-                                <label for="other-ten">Other**box**</label>
+                                <span class="label mt-5"></span>                   
+                                <label mt-5 for="other-ten">Other**box**</label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
                         </div>
@@ -767,17 +786,18 @@
                     <span class="print--icon"><img src="../assets/images/print-button.png" alt="print button" width="200" height="50"></span>
                 </button>
             </form>
-            <div class="modal hide col">
-                <div class="modal--content modal--content__padding row">
+
+            <div class="modal-custom hide shadow-lg container-fluid ml-2 mr-4 py-3">
+                <div class="modal--content modal--content__padding row-modal d-flex justify-content-around gp-0">
                     <div class="modal--content-one">
-                        <h2 class="modal--header">Documentation Tool</h2>
+                        <h2 class="modal--header mb-2">Documentation Tool</h2>
                         <ul>
                             <li><a href="#">Diuretics Thiazide</a></li>
                         </ul>
                     </div>
                     
                     <div class="modal--content-two">
-                        <h2 class="modal--header">Diabetes</h2>
+                        <h2 class="modal--header mb-2">Diabetes</h2>
                         <ul>
                             <li><a href="#">A1C Check-Up</a></li>
                             <li><a href="#">Blood Pressure Check-Up</a></li>
@@ -790,7 +810,7 @@
                     </div>
 
                     <div class="modal--content-two">
-                        <h2 class="modal--header">Lifestyle</h2>
+                        <h2 class="modal--header mb-2">Lifestyle</h2>
                         <ul>
                             <li><a href="#">Diet Assesment</a></li>
                             <li><a href="#">Exercise Assesment</a></li>
@@ -800,9 +820,9 @@
                     </div>
                 </div>
 
-                <div class="modal--content row">
+                <div class="modal--content row-modal d-flex justify-content-around">
                     <div class="modal--content-one">
-                        <h2 class="modal--header">Mental Health</h2>
+                        <h2 class="modal--header mb-2">Mental Health</h2>
                         <ul>
                             <li><a href="#">Healthy Mind Check-Up</a></li>
                             <li><a href="#">Depression Assesment</a></li>
@@ -812,7 +832,7 @@
                     </div>
                     
                     <div class="modal--content-two adjust-padding">
-                        <h2 class="modal--header">Mental Health</h2>
+                        <h2 class="modal--header mb-2">Mental Health</h2>
                         <ul>
                             <li><a href="#">Adult Asthma Control Test</a></li>
                             <li><a href="#">Adult Asthma Action Plan</a></li>
@@ -827,14 +847,25 @@
 
                     <div class="modal--content-two adjust-padding">
                         <a href="">
-                            <h2 class="modal--header">Contact Us</h2>
+                            <h2 class="modal--header mb-2">Contact Us</h2>
                         </a>
                     </div>
                 </div>
                 <i class="bi bi-x button--cancel"></i>
             </div>
+
+
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+              </div>
+
+
         </main>
     </div>
     <script src="../assets/js/form-1.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

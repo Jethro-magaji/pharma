@@ -13,48 +13,36 @@
     <title>Document</title>
 </head>
 <body pb-4>
+    <div class="overlay-container ms-auto m-0"></div>
     <div class="wrapper">
-        <header class="header p-2 fixed-top">
-            <ul class="nav navbar navbar-dark navbar-expand-lg p-2">
-                <div class="d-flex gap-5 justify-content-between">
-                    <li class="nav--log nav-item ">
-                        <a href="http://">
-                            <img src="../assets/images/logi33 (1).png" alt="logo"
-                            width="300" height="55" class="nav-link p-1">
-                        </a>
-                    </li>
-                    
-                    <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <div class="collapse navbar-collapse" id="navmenu">
-                        <div class="d-flex jiji gap-5">
-                            <li class="nav--search-bar nav-item d-flex gap-1">
-                                <input type="search" name="search" id="search" class="search" placeholder="Search" class="">
-                                <i class="bi bi-search d-none d-lg-block"></i>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand"><img src="../assets/images/logi33 (1).png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse w-100" id="navmenu">
+                    <div class="nav-menu ms-auto w-100">
+                        <ul class="navbar-nav ms-auto d-flex justify-content-evenly">
+                            <li class="nav-item mt-4"> 
+                                <input type="search" class="search" placeholder="Search"> <i class="bi bi-search d-none d-lg-block"></i>
                             </li>
-                            <li class="user nav-item d-flex mt-2 flex-row align-items-center w-50 gap-2 justify-content-between">
-                                <div class="welcome-user d-flex flex-row align-items-middle w-100">
-                                    <a href="http://"><i class="bi bi-person-circle align text-white"></i></a>
-                    
-                                    <div class="welcome--user__text-vertical d-flex align-items-center">
-                                        <span class="nav--text mr-4 d-block w-100">Welcome User</span> <span class="welcome--user__vertical">|</span>
-                                    </div>
-                                </div>
-                                <div class="user--sign-out d-flex align-items-center justify-content-start">
-                                    <i class="bi bi-arrow-right-circle"></i>
-                                    <a href="#" class="text-white text-decoration-none ml-5">Signout</a>
-                                </div>
+                            <li class="nav-item d-flex mt-3"> 
+                                <a href="" class="nav-link text-white"><i class="bi bi-person-circle"></i></a><span class="mt-2">Welcome User</span> 
                             </li>
-                        </div>
+                            <li class="nav-item mt-4 d-none d-lg-block">|</li>
+                            <li class="nav-item d-flex mt-3">
+                                <a href="" class="nav-link text-white"><i class="bi bi-arrow-right-circle"></i></a><span class="mt-2">Signout</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </ul>
-        </header>
+            </div>
+        </nav>
         <div class="behind-header">.</div>
         <main class="main container-fluid">
-            <div class="heading d-flex container px-4 pt-2">
+            <div class="heading d-flex container px-4 pt-2 justify-content-between">
                 <p class="drug-name">Diuretics thiazide</p>
 
                 <div class="heading--icon d-flex gap-4 justify-content-end w-25">
@@ -62,7 +50,7 @@
                     <i class="fas fa-bars mt-2"></i>
                 </div>
             </div>
-            <div class="overlay-container container-fluid m-0"></div>
+            <!-- <div class="overlay-container container-fluid ms-auto m-0"></div> -->
             <form action="" class="form container bg p-0">
                 <fieldset class="fieldset w-100 shadow bg-white">
                     <div class="fieldset--data w-100">
@@ -97,7 +85,7 @@
                                 <input type="checkbox" class="custom-checkbox" name="crcl" id="crcl">
                        
                                 <span class="label mt-5"></span>         
-                                <label mt-5 for="crcl">Crcl**box** mL/min</label><i class="bi bi-pencil-fill"></i>
+                                <label mt-5 for="crcl">Crcl <span class="box"><input type="text"></span> mL/min</label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
@@ -105,7 +93,7 @@
                                 <input type="checkbox" class="custom-checkbox" name="blood-pressure" id="blood-pressure">
    
                                 <span class="label mt-5"></span>                             
-                                <label mt-5 for="blood-pressure">Blood Pressure**box**</label><i class="bi bi-pencil-fill"></i>
+                                <label mt-5 for="blood-pressure">Blood Pressure <span class="box"><input type="text"></span></label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
@@ -113,7 +101,7 @@
                                 <input type="checkbox" class="custom-checkbox" name="heart-rate" id="heart-rate">
            
                                 <span class="label mt-5"></span>                    
-                                <label mt-5 for="heart-rate">Heart Rate**box**</label>
+                                <label mt-5 for="heart-rate">Heart Rate <span class="box"><input type="text"></span></label>
                                 <i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
@@ -122,7 +110,7 @@
                                 <input type="checkbox" class="custom-checkbox" name="na+" id="na+">
                          
                                 <span class="label mt-5"></span>      
-                                <label mt-5 for="na+">Na+**box**</label mt-5><i class="bi bi-pencil-fill"></i>
+                                <label mt-5 for="na+">Na+ <span class="box"><input type="text"></span></label mt-5><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
@@ -130,7 +118,7 @@
                                 <input type="checkbox" class="custom-checkbox" name="k+" id="k+">
                            
                                 <span class="label mt-5"></span>     
-                                <label mt-5 for="k+">K+**box**</label><i class="bi bi-pencil-fill"></i>
+                                <label mt-5 for="k+">K+ <span class="box"><input type="text"></span></label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
@@ -138,7 +126,7 @@
                                 <input type="checkbox" class="custom-checkbox" name="other" id="other">
                      
                                 <span class="label mt-5"></span>           
-                                <label mt-5 for="other">other**box**</label ><i class="bi bi-pencil-fill"></i>
+                                <label mt-5 for="other">other <span class="box"><input type="text"></span></label ><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
@@ -152,7 +140,7 @@
                                 <i class="bi bi-mic-fill hide-mic"></i>  
                                     <ol class="ol">
                                         <li>Hypertension</li>
-                                        <li>Edema**box**</li>
+                                        <li>Edema <span class="box"><input type="text"></span></li>
                                         <li>Other**box*</li>
                                     </ol>
                                 
@@ -300,7 +288,7 @@
                                     </div>
                                     <div class="form-check form-switch">
                                         <input type="checkbox" class="form-check-input" name="other-four" id="other-four">
-                                        <label class="form-check-label" for="other-four">Other**box**</label>
+                                        <label class="form-check-label" for="other-four">Other <span class="box"><input type="text"></span></label>
                                     </div>
                                 
                             </div>
@@ -317,7 +305,7 @@
                                 <input type="checkbox" class="custom-checkbox" name="other-four-two" id="other-four-two">
    
                                 <span class="label mt-5"></span>                             
-                                <label mt-5 for="other-four-two">Other**box**</label >
+                                <label mt-5 for="other-four-two">Other <span class="box"><input type="text"></span></label >
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
@@ -332,7 +320,7 @@
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="other-four-three" id="other-four-three">
                                 <span class="label mt-5"></span>
-                                <label mt-5 for="other-four-three">Other**box**</label>
+                                <label mt-5 for="other-four-three">Other <span class="box"><input type="text"></span></label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
                         </div>
@@ -382,7 +370,7 @@
                                     </div>
                                     <div class="form-check form-switch">
                                         <input type="checkbox" class="form-check-input" name="other-five" id="other-five">
-                                        <label class="form-check-label" or="other-five">OTHER**BOX**</label>
+                                        <label class="form-check-label" or="other-five">OTHER <span class="box"><input type="text"></span></label>
                                     </div>
                                 </div>
                             </div>
@@ -392,32 +380,27 @@
                         <div class="fieldset--data__six fieldset--data__details">
                             <div class="data-heading py-3 mb-3"><h2>Other Information</h2></div>
 
-                            <div class="form-check form-switch">
-                                <input type="checkbox" class="form-check-input" name="pregnany-yes-no" id="pregnany-yes-no">
-                                <label class="form-check-label" for="pregnany-yes-no">Pregnancy YES OR NO</label><i class="bi bi-pencil-fill"></i>
-                                <i class="bi bi-mic-fill hide-mic"></i>
-                            </div>
-
-                            <div class="form-check form-switch">
-                                <input type="checkbox" class="form-check-input`" name="if-yes" id="if-yes">           
-                                <label class="form-check-label" for="if-yes">if yes</label><i class="bi bi-pencil-fill"></i>
-                                <i class="bi bi-mic-fill hide-mic"></i>
-                            </div>
-
-                            <div class="individual-field">
-                                <input type="checkbox" class="custom-checkbox" name="how-many-weeks" id="how-many-weeks">
-                   
-                                <span class="label mt-5"></span>             
-                                <label mt-5 for="how-many-weeks">HOW MANY WEEKS ________</label><i class="bi bi-pencil-fill"></i>
-                                <i class="bi bi-mic-fill hide-mic"></i>
-                            </div>
-
-                            <div class="individual-field">
-                                <input type="checkbox" class="custom-checkbox" name="breastfeeding" id="breastfeeding">
-                   
-                                <span class="label mt-5"></span>             
-                                <label mt-5 for="breastfeeding">Breastfeeding YES OR NO</label><i class="bi bi-pencil-fill"></i>
-                                <i class="bi bi-mic-fill hide-mic"></i>
+                            <div class="ms-4 mt-2">
+                                <div class="form-check form-switch other-information">
+                                    <input type="checkbox" class="form-check-input" name="pregnany-yes-no" id="pregnany-yes-no">
+                                    <label class="form-check-label ms-2" for="pregnany-yes-no">Pregnancy YES OR NO</label><i class="bi bi-pencil-fill"></i>
+                                    <i class="bi bi-mic-fill hide-mic"></i>
+                                </div>
+                                <div class="form-check form-switch other-information">
+                                    <input type="checkbox" class="form-check-input" name="if-yes" id="if-yes">
+                                    <label class="form-check-label ms-2" for="if-yes">if yes</label><i class="bi bi-pencil-fill"></i>
+                                    <i class="bi bi-mic-fill hide-mic"></i>
+                                </div>
+                                <div class="form-check form-switch other-information">
+                                    <input type="checkbox" class="form-check-input" name="how-many-weeks" id="how-many-weeks">
+                                    <label class="form-check-label ms-2" for="how-many-weeks">HOW MANY WEEKS <input type="text" class="weeks-input"> </label><i class="bi bi-pencil-fill"></i>
+                                    <i class="bi bi-mic-fill hide-mic"></i>
+                                </div>
+                                <div class="form-check form-switch other-information">
+                                    <input type="checkbox" class="form-check-input" name="breastfeeding" id="breastfeeding">
+                                    <label class="form-check-label ms-2" for="breastfeeding">Breastfeeding YES OR NO</label><i class="bi bi-pencil-fill"></i>
+                                    <i class="bi bi-mic-fill hide-mic"></i>
+                                </div>
                             </div>
                         </div>
 
@@ -491,7 +474,7 @@
                                 <input type="checkbox" class="custom-checkbox" name="other-seven" id="other-seven">
          
                                 <span class="label mt-5"></span>                       
-                                <label mt-5 for="other-seven">Other**box**</label>
+                                <label mt-5 for="other-seven">Other <span class="box"><input type="text"></span></label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
                         </div>
@@ -512,7 +495,7 @@
                                 <input type="checkbox" class="custom-checkbox" name="add-new-med" id="add-new-med">
          
                                 <span class="label mt-5"></span>                      
-                                <label mt-5 for="add-new-med">Add new medication. **box**</label>
+                                <label mt-5 for="add-new-med">Add new medication.  <span class="box"><input type="text"></span></label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
@@ -520,14 +503,14 @@
                                 <input type="checkbox" class="custom-checkbox" name="discontinue-med" id="discontinue-med">
  
                                 <span class="label mt-5"></span>                               
-                                <label mt-5 for="discontinue-med">discontinue medication. **box**</label>
+                                <label mt-5 for="discontinue-med">discontinue medication.  <span class="box"><input type="text"></span></label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="switch-med-eight" id="switch-med-eight">
                                 <span class="label mt-5"></span>
-                                <label mt-5 for="switch-med-eight">Switch medication(s) **box**</label>
+                                <label mt-5 for="switch-med-eight">Switch medication(s)  <span class="box"><input type="text"></span></label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
@@ -535,7 +518,7 @@
                                 <input type="checkbox" class="custom-checkbox" name="increase-dose" id="increase-dose">
      
                                 <span class="label mt-5"></span>                           
-                                <label mt-5 for="increase-dose">Increase dose **box**</label>
+                                <label mt-5 for="increase-dose">Increase dose  <span class="box"><input type="text"></span></label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
@@ -543,7 +526,7 @@
                                 <input type="checkbox" class="custom-checkbox" name="decrease-dose" id="decrease-dose">
      
                                 <span class="label mt-5"></span>                           
-                                <label mt-5 for="decrease-dose">Decrease dose**box**</label>
+                                <label mt-5 for="decrease-dose">Decrease dose <span class="box"><input type="text"></span></label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
@@ -551,7 +534,7 @@
                                 <input type="checkbox" class="custom-checkbox" name="dosing-time" id="dosing-time">
          
                                 <span class="label mt-5"></span>                       
-                                <label mt-5 for="dosing-time">Dosing time/interval change**box**</label>
+                                <label mt-5 for="dosing-time">Dosing time/interval change <span class="box"><input type="text"></span></label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
                             
@@ -582,7 +565,7 @@
                                         Take early in the daytime to avoid nocturnal urination
                                     </li>
                                     <li>
-                                        OTHER**BOX**
+                                        OTHER <span class="box"><input type="text"></span>
                                     </li>
                                 </ol>
                             </div>
@@ -615,7 +598,7 @@
                                 <input type="checkbox" class="custom-checkbox" name="other-eight" id="other-eight">
          
                                 <span class="label mt-5"></span>                       
-                                <label mt-5 for="other-eight">Other**box**</label>
+                                <label mt-5 for="other-eight">Other <span class="box"><input type="text"></span></label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
                         </div>
@@ -634,7 +617,7 @@
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="monitor-toxicity" id="monitor-toxicity">
                                 <span class="label mt-5"></span>
-                                <label mt-5 for="monitor-toxicity">Monitor patient for any of above drug toxicity symptoms**box**</label>
+                                <label mt-5 for="monitor-toxicity">Monitor patient for any of above drug toxicity symptoms <span class="box"><input type="text"></span></label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
 
@@ -656,7 +639,7 @@
                             <div class="individual-field">
                                 <input type="checkbox" class="custom-checkbox" name="monitor-hyper-hypo" id="monitor-hyper-hypo">
                                 <span class="label mt-5"></span>
-                                <label mt-5 for="monitor-hyper-hypo">Other**box**</label>
+                                <label mt-5 for="monitor-hyper-hypo">Other <span class="box"><input type="text"></span></label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
                         </div>
@@ -739,7 +722,7 @@
                                 <input type="checkbox" class="custom-checkbox" name="other-nine" id="other-nine">
            
                                 <span class="label mt-5"></span>                     
-                                <label mt-5 for="other-nine">Other **box**</label><i class="bi bi-pencil-fill"></i>
+                                <label mt-5 for="other-nine">Other  <span class="box"><input type="text"></span></label><i class="bi bi-pencil-fill"></i>
                                 <i class="bi bi-mic-fill hide-mic"></i>
                             </div>    
                         </div>
@@ -773,7 +756,7 @@
                                 <input type="checkbox" class="custom-checkbox" name="other-ten" id="other-ten">
              
                                 <span class="label mt-5"></span>                   
-                                <label mt-5 for="other-ten">Other**box**</label>
+                                <label mt-5 for="other-ten">Other <span class="box"><input type="text"></span></label>
                                 <i class="bi bi-pencil-fill"></i><i class="bi bi-mic-fill hide-mic"></i>
                             </div>
                         </div>
@@ -784,7 +767,7 @@
                 </button>
             </form>
 
-            <div class="modal-custom hide shadow-lg container-fluid ml-2 mr-4 py-3">
+            <div class="modal-custom hide shadow-lg container mt-2 ms-auto ml-2 mr-4 py-3">
                 <div class="modal--content modal--content__padding row-modal d-flex justify-content-around gp-0">
                     <div class="modal--content-one">
                         <h2 class="modal--header mb-2">Documentation Tool</h2>
@@ -828,7 +811,7 @@
                         </ul>   
                     </div>
                     
-                    <div class="modal--content-two adjust-padding">
+                    <div class="modal--content-two">
                         <h2 class="modal--header mb-2">Mental Health</h2>
                         <ul>
                             <li><a href="#">Adult Asthma Control Test</a></li>
@@ -842,7 +825,7 @@
                         </ul>
                     </div>
 
-                    <div class="modal--content-two adjust-padding">
+                    <div class="modal--content-two">
                         <a href="">
                             <h2 class="modal--header mb-2">Contact Us</h2>
                         </a>

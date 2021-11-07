@@ -10,7 +10,9 @@ html {
     -ms-overflow-style: none; 
     scrollbar-width: none; 
     overflow-y: scroll;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0; 
 }
 
 
@@ -22,6 +24,7 @@ body {
 
 .overlays {
     position: absolute;
+    top: 30vh;
     background: hsla(254, 15%, 39%, 0.7);
     min-height: 5500px;
     width: 100vw !important;
@@ -32,7 +35,7 @@ body {
 .main {
     background-image: linear-gradient(to bottom, hsla(254, 15%, 39%, 0.2), hsla(254, 15%, 39%, 0.2)), url('../IMAGES/bg.JPG');
     background-size: cover;
-    height: 28vw;
+    height:50vh;
     width: 100vw;
     padding-top: 8%;
 }
@@ -60,26 +63,6 @@ body {
     border-radius: 20px 20px 20px 20px;
 }
 
-.user {
-    width: 20%;
-    margin-right: 2%;
-}
-
-.nav--search-bar,
-.nav--logo,
-.user {
-    align-self: center;
-    flex-shrink: 1;
-}
-
-.nav--logo {
-    margin-left: 1.2%;
-}
-
-.nav--search-bar {
-    position: relative;
-}
-
 .search {
     width: 40vw;
     height: 70%;
@@ -91,14 +74,13 @@ body {
     box-shadow: 0 0 1px 1px #ccc;
     font-weight: 300;
     color: #fff;
-    /* transform: translateX(90px); */
 }
 
-.bi-search {
+ .bi-search {
     position: absolute;
-    right: 12px;
-    top: 8px;
-}
+    right: 26%;
+    top: 35px;
+} 
 
 .search::placeholder {
     font-size: 1.1rem;
@@ -111,25 +93,6 @@ a {
     text-decoration: none;
     color: white;
 }
-
-.welcome--user__vertical {
-    margin-left: 5px;
-    padding-bottom: 3px;
-}
-
-
-
-.bi-person-circle,
-.bi-arrow-right-circle {
-    margin-right: 5px;
-    font-size: 1.2rem;
-}
-
- .heading {
-    display: flex;
-    justify-content: space-between;
-} 
-
 
 .bi-printer,
 .bi-list {
@@ -188,10 +151,6 @@ h2 {
     margin-left: 15px
 }
 
-/* input[type=checkbox]:checked {
- color: red;
-} */
-
 .fieldset--data__details {
     margin-bottom: 20px;
 }
@@ -224,15 +183,6 @@ button.print {
 
 /* MODAL */
 
-/* .col {
-    display: flex;
-    flex-direction: column;
-} */
- /* .row-modal {
-    display: flex;
-    justify-content: space-around;
-}      */
-
 
 .modal-custom {
     box-shadow: 0 0 3px #ccc;
@@ -241,11 +191,10 @@ button.print {
     width: 90%;
     border-radius: 5px;
     position: absolute; 
-    top: 198px; 
-    /* right: 1px;  */
+    left: 5.3vw;
+    top: 200px; 
     background-color: #fff;
     z-index: 7;
-    /* box-shadow: 0px 0 10px 10px #b6b6b6;  */
 }
 
  .modal--header {
@@ -260,17 +209,7 @@ button.print {
     line-height: 30px;
 }
 
- /* .modal--content__padding {
-    padding-top: 30px
-}  */
 
- .adjust-padding {
-    /* transform: translateX(30px); */
-} 
-
-/* .modal--content ul {
-    padding-left: 0 !important;
-} */
 
  .bi-x {
     position: absolute;
@@ -367,19 +306,31 @@ input[type=checkbox].custom-checkbox:checked:after {
     background-color: #44386a !important;
 }
 
-.collapse {
-    border: 2px solid red;
-    width: 70vw;
-    display: inline-block;
-}
-
-.jiji {
-    width: 92% !important;
-}
-
  .form-check input {
-    transform: translateY( 7px);
+    transform: translateY(7px);
 }
 
+.other-information input {
+    transform: translateY(7px);
+}
 
+.other-information label {
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 40px;
+}
+
+.weeks-input {
+    height: 18px;
+    width:100px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    vertical-align: 8px;
+}
+
+.box input {
+    width: 80px;
+    height: 20px;
+}
 

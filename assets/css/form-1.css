@@ -166,7 +166,7 @@ button.print {
 }
 
 .adherence-radio {
-    margin-left: 50px;
+    margin-left: 15px;
 }
 
 .individual-field .ol {
@@ -296,22 +296,9 @@ input[type=checkbox].custom-checkbox:checked:after {
 
 /* bootstrap switches */
 
-.form-check-input:checked {
-    outline-width: 1px !important;
-    outline-color: #6c6092 !important;
-    border: 3px solid #6c6092 !important;
-    background-color: #44386a !important;
-}
 
- .form-check input {
-    transform: translateY(7px);
-}
 
-.other-information input {
-    transform: translateY(7px);
-}
-
-.other-information label {
+.other-information .form-check-label  {
     font-weight: 500;
     font-size: 1.1rem;
     line-height: 40px;
@@ -333,35 +320,70 @@ input[type=checkbox].custom-checkbox:checked:after {
 
 /* media query */
 
-@media only screen and (max-width: 1000px) {
-    .navbar span,
-    .navbar span {
-        font-size: 0.8rem;
-    }
-
+@media only screen and (max-width: 990px) {
+  
     .navbar .parent-signout {
         transform: translateY(-20px);
         padding-bottom: 4px;
     }
 
-    .search {
-        width: 35vw;
-    }
-
-    .modal--content {
-        flex-direction: column;
-    }
 }
 
-@media only screen and (max-width: 1040px) {
+@media only screen and (max-width: 1100px) {
     .navbar span,
     .navbar span {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .search {
-        width: 35vw;
+        width: 42vw;
     }
+
+    .navbar-brand img {
+        width: 230px !important;
+    }
+    
+    .drug-name {
+        font-size: 2rem;
+    }
+
+
 }
 
 
+/* button group */
+
+.btn-check:active+.btn-outline-primary, 
+.btn-check:checked+.btn-outline-primary, 
+.btn-outline-primary.active, 
+.btn-outline-primary.dropdown-toggle.show, 
+.btn-outline-primary:active {
+    color: #fff !important;
+    background-color: #44386a !important;
+    border: 2px solid #6c6092 !important;
+    outline-style: solid !important;
+    outline-color: #bdbcc4 !important;
+    outline-width: 2px !important;
+    box-shadow: none !important;
+}
+
+.btn-check:active+.btn-outline-primary:focus,
+.btn-check:checked+.btn-outline-primary:focus,
+.btn-outline-primary.active:focus,
+.btn-outline-primary.dropdown-toggle.show:focus, 
+.btn-outline-primary:active:focus {
+    box-shadow: none;
+}
+
+
+.btn-outline-primary {
+    color: black !important;
+    border: 1px solid #6c6092 !important;
+    background-color: #fff !important;
+    }
+
+.btn-outline-primary:hover {
+    color: black !important;
+    background-color: #fff !important;
+    border-color: #6c6092 !important;
+}

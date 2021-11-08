@@ -24,7 +24,7 @@ body {
 
 .overlays {
     position: absolute;
-    top: 30vh;
+    top: 17vw;
     background: hsla(254, 15%, 39%, 0.7);
     min-height: 5500px;
     width: 100vw !important;
@@ -46,12 +46,9 @@ body {
 }
 
 
-.header {
+.navbar {
     color: white;
     background-image: linear-gradient(#5c5574, #433e54);
-    z-index: 6;
-    position: fixed;
-    width: 100%;
 }
 
 
@@ -192,7 +189,7 @@ button.print {
     border-radius: 5px;
     position: absolute; 
     left: 5.3vw;
-    top: 200px; 
+    top: 16vw; 
     background-color: #fff;
     z-index: 7;
 }

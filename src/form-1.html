@@ -19,21 +19,27 @@
             <div class="container">
                 <a href="#" class="navbar-brand"><img src="../assets/images/logi33 (1).png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="navbar-toggler-icon"></i>
                 </button>
     
                 <div class="collapse navbar-collapse w-100" id="navmenu">
                     <div class="nav-menu ms-auto w-100">
                         <ul class="navbar-nav ms-auto d-flex justify-content-evenly">
                             <li class="nav-item mt-4"> 
-                                <input type="search" class="search" placeholder="Search"> <i class="bi bi-search d-none d-lg-block"></i>
+                                <input type="search" class="search" placeholder="Search"> <i class="bi bi-search d-none d-xl-block"></i>
                             </li>
                             <li class="nav-item d-flex mt-3"> 
-                                <a href="" class="nav-link text-white"><i class="bi bi-person-circle"></i></a><span class="mt-2">Welcome User</span> 
+                                <a href="" class="nav-link text-white">
+                                    <i class="bi bi-person-circle"></i>
+                                    <span class="mt-2 welcome">Welcome User</span>
+                                </a>     
                             </li>
                             <li class="nav-item mt-4 d-none d-lg-block">|</li>
                             <li class="nav-item d-flex mt-3">
-                                <a href="" class="nav-link text-white"><i class="bi bi-arrow-right-circle"></i></a><span class="mt-2">Signout</span>
+                                <a href="" class="parent-signout nav-link text-white">
+                                    <i class="bi bi-arrow-right-circle"></i>
+                                    <span class="mt-2 signout">Signout</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -47,10 +53,11 @@
 
                 <div class="heading--icon d-flex gap-4 justify-content-end w-25">
                     <i class="bi bi-printer"></i>
-                    <i class="fas fa-bars mt-2"></i>
+                    <i class="fas fa-bars mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    
                 </div>
             </div>
-            <!-- <div class="overlay-container container-fluid ms-auto m-0"></div> -->
+
             <form action="" class="form container bg p-0">
                 <fieldset class="fieldset w-100 shadow bg-white">
                     <div class="fieldset--data w-100">
@@ -767,7 +774,15 @@
                 </button>
             </form>
 
-            <div class="modal-custom hide shadow-lg container mt-2 ms-auto ml-2 mr-4 py-3">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+            <div class="modal-custom hide shadow-lg container mt-2 ms-auto ml-2 mr-4 py-3"></div>
                 <div class="modal--content modal--content__padding row-modal d-flex justify-content-around gp-0">
                     <div class="modal--content-one">
                         <h2 class="modal--header mb-2">Documentation Tool</h2>
@@ -831,8 +846,12 @@
                         </a>
                     </div>
                 </div>
-                <i class="bi bi-x button--cancel"></i>
+            
             </div>
+            </div>
+            
+          </div>
+        </div>
 
 
         </main>

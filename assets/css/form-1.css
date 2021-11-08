@@ -331,3 +331,33 @@ input[type=checkbox].custom-checkbox:checked:after {
     height: 20px;
 }
 
+/* media query */
+
+@media only screen and (max-width: 1000px) {
+    .navbar span,
+    .navbar span {
+        font-size: 0.8rem;
+    }
+
+    .navbar .parent-signout {
+        transform: translateY(-20px);
+        padding-bottom: 4px;
+    }
+
+    .search {
+        width: 35vw;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .navbar span,
+    .navbar span {
+        font-size: 0.8rem;
+    }
+
+    .search {
+        width: 35vw;
+    }
+}
+
+

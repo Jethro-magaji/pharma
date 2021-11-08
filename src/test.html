@@ -10,46 +10,98 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
-        <div class="container">
-            <a href="#" class="navbar-brand"><img src="../assets/images/logi33 (1).png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse w-100" id="navmenu">
-                <div class="nav-menu ms-auto w-100">
-                    <ul class="navbar-nav ms-auto d-flex justify-content-evenly">
-                        <li class="nav-item mt-4"> <input type="search" class="search"placeholder="Search"> <i class="bi bi-search"></i></li>
-                        <li class="nav-item d-flex mt-3"> 
-                            <a href="" class="nav-link"><i class="bi bi-person-circle p-0"></i></a><span class="mt-2">Welcome User</span> 
-                        </li>
-                        <li class="nav-item mt-4 d-none d-lg-block">|</li>
-                        <li class="nav-item d-flex mt-3">
-                            <a href="" class="nav-link"><i class="bi bi-arrow-right-circle p-0"></i></a><span class="mt-2">Signout</span>
-                        </li>
-                    </ul>
-                </div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    
+    </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body">
+              
+            <div class="modal-custom hide shadow-lg container mt-2 ms-auto ml-2 mr-4 py-3">
+                <div class="modal--content modal--content__padding row-modal d-flex justify-content-around gp-0">
+                    <div class="modal--content-one">
+                        <h2 class="modal--header mb-2">Documentation Tool</h2>
+                        <ul>
+                            <li><a href="#">Diuretics Thiazide</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="modal--content-two">
+                        <h2 class="modal--header mb-2">Diabetes</h2>
+                        <ul>
+                            <li><a href="#">A1C Check-Up</a></li>
+                            <li><a href="#">Blood Pressure Check-Up</a></li>
+                            <li><a href="#">Cholesterol Check-Up</a></li>
+                            <li><a href="#">Hypoglycemia</a></li>
+                            <li><a href="#">Injection Technique</a></li>
+                            <li><a href="#">Preventative Care: Examinations</a></li>
+                            <li><a href="#">Preventative Care: Labs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="modal--content-two">
+                        <h2 class="modal--header mb-2">Lifestyle</h2>
+                        <ul>
+                            <li><a href="#">Diet Assesment</a></li>
+                            <li><a href="#">Exercise Assesment</a></li>
+                            <li><a href="#">Label Reading</a></li>
+                            <li><a href="#">Salt Retention</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="modal--content row-modal d-flex justify-content-around">
+                    <div class="modal--content-one">
+                        <h2 class="modal--header mb-2">Mental Health</h2>
+                        <ul>
+                            <li><a href="#">Healthy Mind Check-Up</a></li>
+                            <li><a href="#">Depression Assesment</a></li>
+                            <li><a href="#">Sleep Hygiene</a></li>
+                            <li><a href="#">Opioid Dependency Treatment</a></li>
+                        </ul>   
+                    </div>
+                    
+                    <div class="modal--content-two">
+                        <h2 class="modal--header mb-2">Mental Health</h2>
+                        <ul>
+                            <li><a href="#">Adult Asthma Control Test</a></li>
+                            <li><a href="#">Adult Asthma Action Plan</a></li>
+                            <li><a href="#">Cholesterol Check-Up</a></li>
+                            <li><a href="#">Child Asthma Control Test</a></li>
+                            <li><a href="#">Child Asthma Action Plan/a></li>
+                            <li><a href="#">COPD Assesment Test</a></li>
+                            <li><a href="#">COPD Action Plan</a></li>
+                            <li><a href="#">Inhaler Device Technique</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="modal--content-two">
+                        <a href="">
+                            <h2 class="modal--header mb-2">Contact Us</h2>
+                        </a>
+                    </div>
+                </div>
+                <i class="bi bi-x button--cancel"></i>
+            </div>
+            </div>
+            
+          </div>
         </div>
-    </nav>
+      </div>
 
-    <style>
-        input {
-
-                width: 40vw;
-                height: 70%;
-                padding: 8px;
-                background-color: #888495;
-                outline: none;
-                border: none;
-                border-radius: 5px;
-                box-shadow: 0 0 1px 1px #ccc;
-                font-weight: 300;
-                color: #fff;
-        }
-    </style>
-
+      <style>
+          .modal-content {
+            width: 60vw !important;
+          }
+      </style>
+       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

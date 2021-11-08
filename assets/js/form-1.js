@@ -1,4 +1,4 @@
-let menuButton = document.querySelector('.fa-bars');
+// let menuButton = document.querySelector('.fa-bars');
 let modal = document.querySelector('.modal-custom');
 let cancelButton = document.querySelector('.button--cancel');
 let overlayContainer = document.querySelector('.overlay-container');
@@ -52,8 +52,8 @@ pencilIcons.forEach(pencilIcon => {
     })
 })
 
-menuButton.addEventListener('click', ()=> { displayModal('hide', 'show','overlays')})
-cancelButton.addEventListener('click', ()=> { hideModal('show', 'hide', 'overlays')})
+// menuButton.addEventListener('click', ()=> { displayModal('hide', 'show','overlays')})
+// cancelButton.addEventListener('click', ()=> { hideModal('show', 'hide', 'overlays')})
 
 function deselectRadioButton(document, radioButtons) {
  document.addEventListener('mouseup', (e) => {

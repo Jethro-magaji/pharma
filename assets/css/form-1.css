@@ -347,6 +347,10 @@ input[type=checkbox].custom-checkbox:checked:after {
     .search {
         width: 35vw;
     }
+
+    .modal--content {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 1040px) {

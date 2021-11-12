@@ -25,24 +25,31 @@ body {
     justify-content: space-between;
 }
 
+.hero {
+    width: 100% !important;
+    background: red;
+    margin: 0;
+    padding: 0;
+}
 
 .login-form {
-    width: 50%;
-    margin-top: 30px;
+    width: 45vw;
+    margin-top: 20px;
     background-color: #fff;
 }
 
 .hero-image {
     height: 100%;
-    width: 45vw;
+    width:50vw;
     object-fit: cover;
+    margin-left: -20px  !important;
 }
 
 .hero-image-sm {
     display: none;
 }
 
-.logo-image { 
+.logo-image {
     position: absolute;
     max-width: 100%;
     height: 100%
@@ -50,7 +57,7 @@ body {
 
 .logo-parent {
     position: fixed;
-    top: 43%;
+    top: 40%;
     right: 59%;
     width: 35%;
     height: 10%;
@@ -256,7 +263,6 @@ select {
 
     .login-form {
         margin-top: 4% !important;
-        /* transform: translate3d(10%, 5%, 0) !important; */
         display: block;
         height: 20% !important;
         box-shadow: 0 0 2px 2px rgba(0, 0, 0, .125);
@@ -265,11 +271,6 @@ select {
         max-width: 80vw;
     } 
 
-    div.submit-button {
-        display: flex !important;
-        text-align: center;
-    }
-     
 
     h1 {
         font-size: 1.8rem !important;
@@ -281,6 +282,12 @@ select {
     .submit-button  {
         font-size: 0.9rem !important;
     }
+
+    .field-wrapper input[type="text"], 
+.field-wrapper input[type="email"], 
+.field-wrapper input[type="password"]{
+    margin-left: 0;
+}
 
     
 }

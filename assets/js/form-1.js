@@ -40,7 +40,8 @@ pencilIcons.forEach(pencilIcon => {
     pencilIcon.addEventListener('click', ()=> {
     let textInput = document.createElement('input')
     createAttribute(textInput, 'class', 'pencil-input')
-
+    createAttribute(textInput, 'readOnly')
+    
     let parent = pencilIcon.parentNode 
     let label = parent.children[2] 
     textInput.value = label.textContent;

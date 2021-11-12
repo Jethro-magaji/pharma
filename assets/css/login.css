@@ -211,11 +211,6 @@ select {
     padding: 7px 50px;
 }
 
-select {
-    display: inline-block;
-    margin-left: 0;
-}
-
 
 /* media query */
 
@@ -287,6 +282,10 @@ select {
 .field-wrapper input[type="email"], 
 .field-wrapper input[type="password"]{
     margin-left: 0;
+}
+
+select {
+    width: 100%;
 }
 
     

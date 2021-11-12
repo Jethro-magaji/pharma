@@ -11,14 +11,16 @@
 </head>
 <body>
   
-    <main class="main">
+    <main class="main container-fluid d-flex justify-content-center">
         <section class="hero">
             <img src="./assets/images/logib.jpg" alt="login background image" class="hero-image">
-            <div class="logo-parent"><img src="./assets/images/logi33 (1).png" alt="login background image" class="logo-image"></div>
+            <div class="logo-parent mb-5"><img src="./assets/images/logi33 (1).png" alt="login background image" class="logo-image"></div>
         </section>
 
-        <section class="login-form">
-            <div class="login-form--header">
+        <img src="./assets/images/logi33 (1).png" alt="login background image" class="hero-image-sm">
+
+        <section class="login-form p-3 w-100 container-fluid mt-5 mb-3">
+            <div class="login-form--header m-3 mt-2">
                 <h1 class="nav" id="nav-tab" role="tablist">
                     <span class="form--header__login active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" aria-controls="login" type="button" role="tab" aria-selected="true">Login</span>
                     <span class="form--login__vertical-bar">|</span>
@@ -26,7 +28,7 @@
                 </h1>
             </div>
 
-            <div class="login-signup tab-content" id="nav-tabContent">
+            <div class="login-signup tab-content container" id="nav-tabContent">
                 <div class="login-form--fields tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
                     <form action="">
                         <div class="field-wrapper">
@@ -49,7 +51,7 @@
                     </form>
                 </div>
                 
-                <div class="signup--form__fields signup--form__fields-no-display tab-pane fade" id="signup1" role="tabpanel" aria-labelledby="signup1-tab">
+                <div class="signup--form__fields signup--form__fields-no-display tab-pane fade container" id="signup1" role="tabpanel" aria-labelledby="signup1-tab">
                     <form class="signup" id="signup_form" method="post" action="/accounts/signup/">
                         <input type="hidden" name="csrfmiddlewaretoken" value="Qj3f2OkmpSGWoFno7LYnnIDB01100BbEaUBk3NagqeVJhY0OlVyrGgWv6gIjmRUy">
                         <div class="default_form">

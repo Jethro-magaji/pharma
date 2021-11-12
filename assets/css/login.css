@@ -25,9 +25,11 @@ body {
     justify-content: space-between;
 }
 
+
 .login-form {
     width: 50%;
     margin-top: 30px;
+    background-color: #fff;
 }
 
 .hero-image {
@@ -36,9 +38,14 @@ body {
     object-fit: cover;
 }
 
+.hero-image-sm {
+    display: none;
+}
+
 .logo-image { 
     position: fixed;
 } 
+
 .logo-parent {
     position: absolute;
     top: 45%;
@@ -204,7 +211,103 @@ select {
 }
 
 
+/* media query */
 
+@media only screen and (max-width:1024px) {
+    h1 {
+        font-size: 3rem !important;
+    }
+}
+
+@media only screen and (max-width:720px) {
+    h1 {
+        font-size: 2.2rem !important;
+    }
+
+    .field-wrapper label,
+    .default_form input[type="submit"],
+    .default_form label,
+    .submit-button {
+        font-size: 1.1rem !important;
+    }
+    
+}
+
+@media only screen and (max-width:480px) {
+    main {
+        background-image: url(../images/logib.jpg);
+        display: block;
+        width: 100%;
+        height:100%;
+        flex-direction: column;
+    }
+
+    .hero {
+        display: none;
+    }
+
+    /* .logo-parent {
+        top: 1%;
+        left: 15%;
+        height: 10px !important;
+        z-index: 5;
+    }
+
+    .logo-image {
+        height: 5%;
+    } */
+
+    .hero-image-sm {
+        display: block;
+        z-index: 10 !important;
+        height: 50px;
+        margin-top: 30px;
+    }
+
+
+    .login-form {
+        margin-top: 4% !important;
+        /* transform: translate3d(10%, 5%, 0) !important; */
+        display: block;
+        height: 20% !important;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, .125);
+        border-radius: 2px;
+        margin-top: 5% !important;
+        max-width: 80vw;
+    } 
+
+    .submit-button {
+        display: block;
+        text-align: center;
+    }
+     
+
+    h1 {
+        font-size: 1.8rem !important;
+    }
+
+    .field-wrapper label,
+    .default_form input[type="submit"],
+    .default_form label,
+    .submit-button  {
+        font-size: 0.9rem !important;
+    }
+
+    
+}
+
+@media only screen and (max-width:360px) {
+    h1 {
+        font-size: 1.1rem !important;
+    }
+
+    .field-wrapper label,
+    .default_form input[type="submit"],
+    .default_form label,
+    .submit-button  {
+        font-size: 0.7rem !important;
+    }
+}
 
 
 

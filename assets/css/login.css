@@ -43,14 +43,16 @@ body {
 }
 
 .logo-image { 
-    position: fixed;
+    position: absolute;
+    max-width: 100%;
+    height: 100%
 } 
 
 .logo-parent {
-    position: absolute;
-    top: 45%;
-    right: 62.5%;
-    width: 30%;
+    position: fixed;
+    top: 43%;
+    right: 59%;
+    width: 35%;
     height: 10%;
 }
 
@@ -76,7 +78,6 @@ h1 {
 .form--header___register-link a {
     text-decoration: none;
 }
-
 
 .field-wrapper {
     border-bottom: 2px solid #ececee;
@@ -118,8 +119,6 @@ span.register-button {
     color: #433e54;
     padding-left: 5px;
 }
-
-
 
 
 /* sign up form */
@@ -246,16 +245,6 @@ select {
         display: none;
     }
 
-    /* .logo-parent {
-        top: 1%;
-        left: 15%;
-        height: 10px !important;
-        z-index: 5;
-    }
-
-    .logo-image {
-        height: 5%;
-    } */
 
     .hero-image-sm {
         display: block;
@@ -276,8 +265,8 @@ select {
         max-width: 80vw;
     } 
 
-    .submit-button {
-        display: block;
+    div.submit-button {
+        display: flex !important;
         text-align: center;
     }
      

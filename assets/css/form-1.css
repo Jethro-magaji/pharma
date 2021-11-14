@@ -21,15 +21,6 @@ body {
     background-color: #f7f7f7 !important;
 }  
 
-/* .overlays {
-    position: absolute;
-    top: 17vw;
-    background: hsla(254, 15%, 39%, 0.7);
-    min-height: 5500px;
-    width: 100vw !important;
-    z-index: 5;
-    margin-right: 100px;
-}  */
 
 .main {
     background-image: linear-gradient(to bottom, hsla(254, 15%, 39%, 0.2), hsla(254, 15%, 39%, 0.2)), url('../IMAGES/bg.JPG');

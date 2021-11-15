@@ -22,9 +22,9 @@
         <section class="login-form p-3 w-100 container-fluid mt-5 mb-3">
             <div class="login-form--header m-3 mt-2">
                 <h1 class="nav" id="nav-tab" role="tablist">
-                    <span class="form--header__login active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" aria-controls="login" type="button" role="tab" aria-selected="true">Login</span>
+                    <span class="form--header__login active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" aria-controls="login" role="tab" aria-selected="true">Login</span>
                     <span class="form--login__vertical-bar">|</span>
-                    <span class="register-button" href="#signup1" id="signup1-tab" data-bs-toggle="tab" data-bs-target="#signup1" role="tab" aria-controls="signup1" type="button" aria-selected="false">Register</span>
+                    <span class="register-button" href="#signup1" id="signup1-tab" data-bs-toggle="tab" data-bs-target="#signup1" role="tab" aria-controls="signup1" aria-selected="false">Register</span>
                 </h1>
             </div>
 
@@ -106,6 +106,7 @@
                               <span class="required">*</span>
                               <span>
                               <select name="profession" id="id_profession">
+                                <option value="p">Select profession</option>
                                 <option value="p">pharmacist</option>
                           
                                 <option value="t" size="100">pharmacy technician</option>
@@ -287,6 +288,7 @@
                               <span class="required">*</span>
                               <span>
                                 <select name="time_zone" id="id_time_zone" width="500">
+                                      <option value="Africa/Abidjan">Select time zone</option>
                                       <option value="Africa/Abidjan">Africa/Abidjan</option>
                                 
                                       <option value="Africa/Accra">Africa/Accra</option>
@@ -1194,10 +1196,10 @@
                     
                           <div class="default_field">
                             <div class="field-wrapper-register">
-                              <label for="id_password2">Password (again):</label>
+                              <label for="id_password2">Confirm Password:</label>
                               <span class="required">*</span>
                               <span>
-                                <input type="password" name="password2" placeholder="Password (again)" required="" id="id_password2" size="30">
+                                <input type="password" name="password2" placeholder="Conform Password" required="" id="id_password2" size="30">
                               </span>
                             </div>
                             <em class="help_text">

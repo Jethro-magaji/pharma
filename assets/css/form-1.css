@@ -41,7 +41,6 @@ body {
     background-image: linear-gradient(#5c5574, #433e54);
 }
 
-
 .form {
     border-radius: 20px;
 }
@@ -124,6 +123,10 @@ h2 {
 .individual-field,
 h2 {
     padding-left: 30px;
+}
+
+.required {
+    font-size: 0.7rem;
 }
 
 .individual-field {
@@ -322,7 +325,7 @@ input[type=checkbox].custom-checkbox:checked:after {
 /* media query */
 
 @media only screen and (max-width: 990px) {
-  
+   
     .navbar .parent-signout {
         transform: translateY(-20px);
         padding-bottom: 4px;
@@ -349,6 +352,31 @@ input[type=checkbox].custom-checkbox:checked:after {
     }
 
 
+}
+
+
+@media only screen and (max-width: 480px) {
+    .drug-name {
+        font-size: 1.5rem;
+    }
+
+    .bi-printer,
+    .fa-bars {
+    font-size: 1.1rem;
+    }
+
+    .bi-printer {
+        margin-top: 4px;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    label,
+    ol li {
+    font-size: 0.8rem !important;
+    }
 }
 
 

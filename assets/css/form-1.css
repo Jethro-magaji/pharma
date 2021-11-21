@@ -41,6 +41,10 @@ body {
     background-image: linear-gradient(#5c5574, #433e54);
 }
 
+.welcome,
+.signout {
+    font-size: 0.95rem !important;
+}
 .form {
     border-radius: 20px;
 }

@@ -43,7 +43,7 @@ body {
 
 .welcome-user-parent,
 .signout-parent {
-    width: 150px;
+    width: 140px;
 }
 
 .welcome,
@@ -76,7 +76,7 @@ body {
  .bi-search {
     position: absolute;
     display: inline-block;
-    right: 25vw;
+    right: 26vw;
     top: 36px;
 } 
 
@@ -214,6 +214,9 @@ button.print {
     font-size: 1.7rem !important;
 } 
 
+/* .modal--content {
+    transform: translateX(-0.5%);
+} */
 
  .modal--content a {
     text-decoration: none;
@@ -333,15 +336,29 @@ input[type=checkbox].custom-checkbox:checked:after {
 }
 
 /* media query */
-@media only screen and (min-width: 1200px) and (max-width: 1350px) {
+
+@media only screen and (min-width: 1400px) and (max-width: 1499px) {
 	.bi-search {
-        right: 26vw;
+        right: 32vw;
     }
 }
 
-@media only screen and (min-width: 1400px) and (max-width: 1880px) {
+@media only screen and (min-width: 1500px) and (max-width: 1738px) {
 	.bi-search {
         right: 30vw;
+    }
+}
+
+@media only screen and (min-width: 1740px) and (max-width: 1880px) {
+	.bi-search {
+        right: 28vw;
+    }
+}
+
+
+@media only screen and (min-width: 2000px) and (max-width: 2150px) {
+	.bi-search {
+        right: 25vw;
     }
 }
 
@@ -364,6 +381,11 @@ input[type=checkbox].custom-checkbox:checked:after {
         width: 42vw;
     }
 
+    .bi-search {
+        right: 30vw;
+        top: 32px;
+    }
+
     .navbar-brand img {
         width: 230px !important;
     }
@@ -372,6 +394,14 @@ input[type=checkbox].custom-checkbox:checked:after {
         font-size: 2rem;
     }
 
+
+}
+
+@media only screen and (max-width: 990px) {
+    .modal--content {
+        flex-direction: column !important;
+        padding-left: 20px;
+    }
 
 }
 
@@ -398,6 +428,7 @@ input[type=checkbox].custom-checkbox:checked:after {
     ol li {
     font-size: 0.8rem !important;
     }
+
 }
 
 
